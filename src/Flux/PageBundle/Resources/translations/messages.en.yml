@@ -1,0 +1,48 @@
+page.code: Code
+page.title: Title
+page.metatitle: Metatitle
+page.metadescription: Metadescription
+page.name: Name
+page.subtitle: Subtitle
+page.summary: Summary
+page.text1: Text 1
+page.text2: Text 2
+page.image1: Image 1
+page.upload.image1: Upload image 1
+page.image2: Image 2
+page.upload.image2: Upload image 2
+page.image3: Image 3
+page.upload.image3: Upload image 3
+page.image4: Image 4
+page.upload.image4: Upload image 4
+page.position: Position
+page.active: Active
+page.actions: Actions
+page.category: Category
+page.dimensions: Dimensions
+page.specifications: Specifications
+page.birth: Birth date
+page.weight: Weight
+page.fabrics: Fabrics amount
+page.price: Price
+page.stock: Stock
+page.size: Size
+page.pinterest.pin: Pinterest pin URL
+page.pinterest.pinboard: Pinterest pinboard URL
+page.facebook.photo: Facebook photo URL
+page.facebook.album: Facebook album URL
+page.gender: Sex
+page.gender.male: male
+page.gender.female: female
+page.text: Text
+page.images: Images
+page.controls: Controls
+page.translations: Translations
+page.altimage1: Alternate text img. 1
+page.titleimage1: Title image 1
+page.altimage2: Alternate text img. 2
+page.titleimage2: Title image 2
+page.altimage3: Alternate text img. 3
+page.titleimage3: Title image 3
+page.altimage4: Alternate text img. 4
+page.titleimage4: Title image 4

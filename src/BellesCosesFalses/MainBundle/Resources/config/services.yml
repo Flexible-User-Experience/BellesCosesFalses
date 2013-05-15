@@ -1,0 +1,7 @@
+parameters:
+#    belles_coses_falses_main.example.class: BellesCosesFalses\MainBundle\Example
+
+services:
+#    belles_coses_falses_main.example:
+#        class: %belles_coses_falses_main.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

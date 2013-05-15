@@ -1,0 +1,48 @@
+page.code: Codi
+page.title: Títol
+page.metatitle: Metatítol
+page.metadescription: Metadescripció
+page.name: Nom
+page.subtitle: Subtítol
+page.summary: Resum
+page.text1: Text 1
+page.text2: Text 2
+page.image1: Imatge 1
+page.upload.image1: Pujar imatge 1
+page.image2: Imatge 2
+page.upload.image2: Pujar imatge 2
+page.image3: Imatge 3
+page.upload.image3: Pujar imatge 3
+page.image4: Imatge 4
+page.upload.image4: Pujar imatge 4
+page.position: Posició
+page.active: Activa
+page.actions: Accions
+page.category: Categoria
+page.dimensions: Dimensions
+page.specifications: Especificacions
+page.birth: Data de naixement
+page.weight: Pes
+page.fabrics: Quantitat de teles
+page.price: Preu
+page.stock: Estoc
+page.size: Talla
+page.pinterest.pin: URL pin Pinterest
+page.pinterest.pinboard: URL tauler Pinterest
+page.facebook.photo: URL foto Facebook
+page.facebook.album: URL àlbum Facebook
+page.gender: Sexe
+page.gender.male: masculí
+page.gender.female: femení
+page.text: Text
+page.images: Imatges
+page.controls: Controls
+page.translations: Traduccions
+page.altimage1: Text alternatiu img. 1
+page.titleimage1: Títol imatge 1
+page.altimage2: Text alternatiu img. 2
+page.titleimage2: Títol imatge 2
+page.altimage3: Text alternatiu img. 3
+page.titleimage3: Títol imatge 3
+page.altimage4: Text alternatiu img. 4
+page.titleimage4: Títol imatge 4

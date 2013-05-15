@@ -1,0 +1,24 @@
+{% extends 'MainBundle:Global:layout.html.twig' %}
+{% block titulo %}
+    {% trans %}errors.anerroroccurred{% endtrans %}: {{ status_text }} |
+{% endblock %}
+{% block description %}
+{% endblock %}
+{% block recursos %}
+{% endblock recursos %}
+{% block principal %}
+    <div class="constrictor clearfix">
+        <div class="menu-nivel-uno-lateral-izq">
+            <img src="{{ asset('bundles/main/images/404.png') }}" alt="404 logo">
+        </div>
+        <div class="menu-nivel-uno-lateral-der-addons">
+            <h1>Oops! {% trans %}errors.anerroroccurred{% endtrans %}</h1>
+            <h2 style="margin-bottom:60px">{% trans %}errors.theserverreturneda{% endtrans %} "<span style="color:#6C1D45">{{ status_code }} {{ status_text }}</span>".</h2>
+        </div>
+    </div>
+{% endblock %}
+{% block peuidiomes %}
+    {% if app.request.locale != 'ca' %}<a href="{{ path('calmenescal_ca', {'_locale' : 'ca'}) }}">català</a> ·{% endif %}
+    {% if app.request.locale != 'es' %}<a href="{{ path('calmenescal_es', {'_locale' : 'es'}) }}">español</a> {% if app.request.locale != 'en' %}·{% endif %}{% endif %}
+    {% if app.request.locale != 'en' %}<a href="{{ path('calmenescal_en', {'_locale' : 'en'}) }}">english</a>{% endif %}<br/>
+{% endblock %}
