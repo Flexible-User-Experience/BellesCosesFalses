@@ -2,13 +2,34 @@
 {% block description %}
 {% endblock %}
 {% block recursos %}
-<script type="text/javascript">
-    jQuery(document).ready(function($) {
-        hcd = $('#hack-colors-div');
-        color = hcd.css("background");
-        console.log('hit ' + color);
-    });
-</script>
+    <script type="text/javascript" src="{{ asset('bundles/bellescosesfalsesmain/js/fades.js') }}"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            var black = [0, 0, 0];
+            var yellow = [250, 247, 67];
+            var magenta = [231, 0, 138];
+            var green = [139, 203, 71];
+            var blue = [44, 65, 156];
+            APP.colormatrix = [black, yellow, magenta, green];
+            APP.hcd = $('#hack-colors-div');
+            setGradientCSS3(APP.hcd, 231, 0, 138);
+            setTimeout(fireFadeInInterval, 25, APP.colormatrix[2]);
+            //$(document).trigger('app/setFade', hcd, getRandomIntMatrix(3));
+        });
+
+        function fireFadeInInterval(color) {
+            console.log('hit ' + color);
+            var red = color[0];
+            var green = color[1];
+            var blue = color[2];
+            if (red < 256) red++;
+            if (green < 256) green++;
+            if (blue < 256) blue++;
+            setGradientCSS3(APP.hcd, red, green, blue);
+            APP.colormatrix[2] = [red, green, blue];
+            if (red < 255 && green < 255 && blue < 255) setTimeout(fireFadeInInterval, 25, APP.colormatrix[2]);
+        }
+    </script>
 {% endblock recursos %}
 {% block principal %}
     <div class="home-panel" id="hack-colors-div">
