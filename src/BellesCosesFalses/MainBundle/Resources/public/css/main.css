@@ -193,13 +193,13 @@ div#principal {
 
 div.home-panel {
     background: #FFF;
-    background: -moz-linear-gradient(left,  #FFF 0%, #000 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFF), color-stop(100%,#000));
-    background: -webkit-linear-gradient(left,  #FFF 0%,#000 100%);
-    background: -o-linear-gradient(left,  #FFF 0%,#000 100%);
-    background: -ms-linear-gradient(left,  #FFF 0%,#000 100%);
-    background: linear-gradient(to right,  #FFF 0%,#000 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#000',GradientType=1 );
+    background: -moz-linear-gradient(left,  #FFF 0%, #FFF 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFF), color-stop(100%,#FFF));
+    background: -webkit-linear-gradient(left,  #FFF 0%,#FFF 100%);
+    background: -o-linear-gradient(left,  #FFF 0%,#FFF 100%);
+    background: -ms-linear-gradient(left,  #FFF 0%,#FFF 100%);
+    background: linear-gradient(to right,  #FFF 0%,#FFF 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#FFF',GradientType=1 );
 }
 
 
