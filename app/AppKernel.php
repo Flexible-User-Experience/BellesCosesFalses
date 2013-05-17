@@ -50,7 +50,6 @@ class AppKernel extends Kernel
 
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
 
-            new CalMenescal\MainBundle\MainBundle(),
             new Flux\PageBundle\FluxPageBundle(),
             new Flux\ProductBundle\FluxProductBundle(),
             new BellesCosesFalses\MainBundle\BellesCosesFalsesMainBundle(),
