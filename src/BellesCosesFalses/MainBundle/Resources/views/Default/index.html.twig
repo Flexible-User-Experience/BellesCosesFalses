@@ -2,9 +2,16 @@
 {% block description %}
 {% endblock %}
 {% block recursos %}
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        hcd = $('#hack-colors-div');
+        color = hcd.css("background");
+        console.log('hit ' + color);
+    });
+</script>
 {% endblock recursos %}
 {% block principal %}
-    <div class="home-panel">
+    <div class="home-panel" id="hack-colors-div">
         <img style="width:700px;" src="{{ asset('bundles/bellescosesfalsesmain/images/muntanyes.png') }}" alt="Muntanyes, valls i rius" title="">
     </div>
 {% endblock %}
