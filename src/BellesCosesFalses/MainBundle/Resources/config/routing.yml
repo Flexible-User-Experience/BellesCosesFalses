@@ -10,10 +10,6 @@ activitats:
     pattern:  /activitats
     defaults: { _controller: BellesCosesFalsesMainBundle:Activitats:index }
 
-lopati:
-    pattern:  /lo-pati
-    defaults: { _controller: BellesCosesFalsesMainBundle:LoPati:index }
-
 agraiments:
     pattern:  /agraiments
     defaults: { _controller: BellesCosesFalsesMainBundle:Agraiments:index }
@@ -22,9 +18,9 @@ blog:
     pattern:  /blog
     defaults: { _controller: BellesCosesFalsesMainBundle:Blog:index }
 
-calmenescal_ca:
-    pattern:  /blog
-    defaults: { _controller: BellesCosesFalsesMainBundle:Blog:index }
+credits:
+    pattern:  /credits
+    defaults: { _controller: BellesCosesFalsesMainBundle:Credits:index }
 
 ############################ GLOBALS
 sitemap:

@@ -11,6 +11,11 @@ class Builder extends ContainerAware
     {
         $menu = $factory->createItem('root');
         $menu->setCurrentUri($this->container->get('request')->getRequestUri());
+        $menu->addChild('EXPOSICIÓ', array('route' => 'exposicio'));
+        $menu->addChild('ARTISTES', array('route' => 'artistes'));
+        $menu->addChild('AGRAÏMENTS', array('route' => 'agraiments'));
+        $menu->addChild('BLOG', array('route' => 'blog'));
+        $menu->addChild('CRÈDITS', array('route' => 'credits'));
         return $menu;
     }
 }
