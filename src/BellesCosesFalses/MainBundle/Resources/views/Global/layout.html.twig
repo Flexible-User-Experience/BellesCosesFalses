@@ -22,26 +22,28 @@
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 <![endif]-->
-<header>
-    <div class="box-header-top">
-        <h1>RELAT DE<br/>BELLES COSES FALSES</h1>
-        <h2>UNA EXPOSICIÓ DE PAISATGES</h2>
+<div class="constrictor clearfix">
+    <header>
+        <div class="box-header-top">
+            <h1><a href="{{ path('home') }}">RELAT DE<br/>BELLES COSES FALSES</a></h1>
+            <h2>UNA EXPOSICIÓ DE PAISATGES</h2>
+        </div>
+        <div class="box-header-menu">
+            {{ knp_menu_render('BellesCosesFalsesMainBundle:Builder:main_menu', {'depth' : 1}) }}
+        </div>
+        <div class="box-header-networks">
+            <h3>PARTICIPA:</h3>
+            <a href="{{ path('home') }}" target="_blank"><img src="{{ asset('bundles/bellescosesfalsesmain/images/facebook.png') }}" alt="Facebook logo" title="Facebook"></a>
+            <a href="{{ path('home') }}" target="_blank"><img src="{{ asset('bundles/bellescosesfalsesmain/images/pinterest.png') }}" alt="Pinterest logo" title="Pinterest"></a>
+            <a href="{{ path('home') }}" target="_blank"><img src="{{ asset('bundles/bellescosesfalsesmain/images/instagram.png') }}" alt="Instagram logo" title="Instagram"></a>
+        </div>
+        <div class="box-header-bottom">
+            <a href="http://www.lopati.cat"><img src="{{ asset('bundles/bellescosesfalsesmain/images/logo-peu.png') }}" alt="Lo Pati logo" title="Lo Pati"></a>
+        </div>
+    </header>
+    <div id="principal">
+        {% block principal %}{% endblock %}
     </div>
-    <div class="box-header-menu">
-        {{ knp_menu_render('BellesCosesFalsesMainBundle:Builder:main_menu', {'depth' : 1}) }}
-    </div>
-    <div class="box-header-networks">
-        <h3>PARTICIPA:</h3>
-        <a href="{{ path('home') }}" target="_blank"><img src="{{ asset('bundles/bellescosesfalsesmain/images/facebook.png') }}" alt="Facebook logo" title="Facebook"></a>
-        <a href="{{ path('home') }}" target="_blank"><img src="{{ asset('bundles/bellescosesfalsesmain/images/pinterest.png') }}" alt="Pinterest logo" title="Pinterest"></a>
-        <a href="{{ path('home') }}" target="_blank"><img src="{{ asset('bundles/bellescosesfalsesmain/images/instagram.png') }}" alt="Instagram logo" title="Instagram"></a>
-    </div>
-    <div class="box-header-bottom">
-        <a href="http://www.lopati.cat"><img src="{{ asset('bundles/bellescosesfalsesmain/images/logo-peu.png') }}" alt="Lo Pati logo" title="Lo Pati"></a>
-    </div>
-</header>
-<div id="principal">
-    {% block principal %}{% endblock %}
 </div>
 <script type="text/javascript">
     var _gaq = _gaq || [];

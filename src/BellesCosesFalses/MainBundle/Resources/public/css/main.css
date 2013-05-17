@@ -101,8 +101,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 div.constrictor {
-    width: 700px;
-    padding: 0 10px;
+    width: 960px;
     margin: 0 auto;
 }
 
@@ -164,9 +163,20 @@ header div.box-header-menu ul li a {
     font-size: 1em;
 }
 
+header div.box-header-menu ul li.current a {
+    background: #000;
+    color: #FFF;
+}
+
 header div.box-header-networks h3 {
     font-size: 1em;
     font-weight: bold;
+    margin: 0.3em 0;
+}
+
+header div.box-header-networks a {
+    margin-bottom: 10px;
+    display: block;
 }
 
 header div.box-header-bottom {
@@ -179,7 +189,10 @@ header div.box-header-bottom {
  * MAIN
  */
 div#principal {
-    min-height: 400px;
+    min-height: 800px;
+    margin: 0 10px;
+    width: 700px;
+    float: left;
 }
 
 
