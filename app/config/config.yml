@@ -88,9 +88,9 @@ swiftmailer:
     transport:  smtp
     encryption: ssl
     auth_mode:  login
-    host:       smtp.gmail.com
-    username:   info@cellermenescal.com
-    password:   Menescal74
+    host:       %mail_host%
+    username:   %mail_username%
+    password:   %mail_password%
     spool:      { type: memory }
 
 # TinyMC
