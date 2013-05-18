@@ -88,7 +88,15 @@
          * Set the CSS3 gradient cross-browser
          */
         function setGradientCSS3(node, red, green, blue) {
-            node.css('background', '-webkit-gradient(linear,left top,right top,color-stop(0%,rgb(255,255,255)), color-stop(100%,rgb('+red+','+green+','+blue+')))');
+            if ($.browser.name == 'chrome' || $.browser.name == 'safari') {
+                node.css('background', '-webkit-gradient(linear, left top, right top, color-stop(0%,rgb(255,255,255)), color-stop(100%,rgb('+red+','+green+','+blue+')))');
+            } else if ($.browser.name == 'firefox') {
+                node.css('background', '-moz-linear-gradient(left, rgb(255,255,255) 0%, rgb('+red+','+green+','+blue+') 100%)');
+            } else if ($.browser.name == 'opera') {
+                node.css('background', '-o-linear-gradient(left, rgb(255,255,255) 0%, rgb('+red+','+green+','+blue+') 100%)');
+            } else if ($.browser.name == 'msie') {
+                node.css('background', '-ms-linear-gradient(left, rgb(255,255,255) 0%, rgb('+red+','+green+','+blue+') 100%)');
+            }
         }
     </script>
 {% endblock recursos %}
