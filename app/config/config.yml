@@ -27,7 +27,7 @@ twig:
     strict_variables: %kernel.debug%
     form:
         resources:
-            - 'MainBundle:Admin:form.html.twig'
+            - 'BellesCosesFalsesMainBundle:Admin:form.html.twig'
 
 # Assetic Configuration
 assetic:
@@ -252,11 +252,11 @@ fos_user:
 
 # Sonata Admin
 sonata_admin:
-    title:  'Cal Menescal · Administrador de continguts'
+    title:  'Belles Coses Falses · Administrador continguts'
     title_logo: '/favicon.png'
     templates:
-        layout: MainBundle:Admin:standard_layout_tinymce.html.twig
-        dashboard: MainBundle:Admin:my_dashboard.html.twig
+        layout: BellesCosesFalsesMainBundle:Admin:standard_layout_tinymce.html.twig
+        dashboard: BellesCosesFalsesMainBundle:Admin:my_dashboard.html.twig
         ajax: SonataAdminBundle::ajax_layout.html.twig
         list: SonataAdminBundle:CRUD:list.html.twig
         show: SonataAdminBundle:CRUD:show.html.twig
@@ -266,8 +266,6 @@ sonata_admin:
             - { position: left, type: sonata.admin.block.admin_list }
         groups:
             Pàgines:
-            Vins:
-            Activitats:
 
 # Sonata Block
 sonata_block:
@@ -286,23 +284,3 @@ services:
         tags:
             - { name: sonata.admin, manager_type: orm, group: Pàgines, label: Pagina }
         arguments: [null, Flux\PageBundle\Entity\Page, FluxPageBundle:PageAdmin]
-    flux.admin.productcategory:
-        class: Flux\ProductBundle\Admin\CategoryAdmin
-        tags:
-            - { name: sonata.admin, manager_type: orm, group: Vins, label: Categoria }
-        arguments: [null, Flux\ProductBundle\Entity\Category, FluxProductBundle:CategoryAdmin]
-    flux.admin.product:
-        class: Flux\ProductBundle\Admin\ProductAdmin
-        tags:
-            - { name: sonata.admin, manager_type: orm, group: Vins, label: Vi }
-        arguments: [null, Flux\ProductBundle\Entity\Product, FluxProductBundle:ProductAdmin]
-    flux.admin.activitycategory:
-        class: Flux\ProductBundle\Admin\ActivityCategoryAdmin
-        tags:
-            - { name: sonata.admin, manager_type: orm, group: Activitats, label: Categoria }
-        arguments: [null, Flux\ProductBundle\Entity\ActivityCategory, FluxProductBundle:ActivityCategoryAdmin]
-    flux.admin.activity:
-        class: Flux\ProductBundle\Admin\ActivityAdmin
-        tags:
-            - { name: sonata.admin, manager_type: orm, group: Activitats, label: Activitat }
-        arguments: [null, Flux\ProductBundle\Entity\Activity, FluxProductBundle:ActivityAdmin]
