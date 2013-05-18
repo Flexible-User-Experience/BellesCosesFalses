@@ -8,6 +8,10 @@ class ExposicioController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('BellesCosesFalsesMainBundle:Exposicio:index.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $page = $em->getRepository('FluxPageBundle:Page')->findOneBy(array('code' => '001-EXP'));
+        return $this->render('BellesCosesFalsesMainBundle:Exposicio:index.html.twig', array(
+            'page' => $page,
+        ));
     }
 }

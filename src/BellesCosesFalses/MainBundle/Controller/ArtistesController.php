@@ -8,6 +8,10 @@ class ArtistesController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('BellesCosesFalsesMainBundle:Artistes:index.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $page = $em->getRepository('FluxPageBundle:Page')->findOneBy(array('code' => '002-ART'));
+        return $this->render('BellesCosesFalsesMainBundle:Artistes:index.html.twig', array(
+            'page' => $page,
+        ));
     }
 }
