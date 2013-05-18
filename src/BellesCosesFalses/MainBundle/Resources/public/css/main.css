@@ -202,53 +202,13 @@ div.home-panel {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#FFF',GradientType=1 );
 }
 
-
-
-
-
-/*
- * Footer
- */
-footer {
-    color: #FFF;
-    font-size: 14px;
-    margin-top: 60px;
+div.generic-panel {
+    padding-top: 2em;
 }
 
-footer div.constrictor.clearfix div.base {
-    background-color: #606060;
-    height: 80px;
-    padding: 20px;
+div.generic-panel h1 {
+    margin-top: 0;
 }
-
-footer div.constrictor.clearfix div.base div.columna {
-    float: left;
-    margin-right: 30px;
-    min-height: 50px;
-}
-
-footer div.constrictor.clearfix div.base div.columna.tres {
-    margin-left: 116px;
-}
-
-footer div.constrictor.clearfix div.base div.columnafinal {
-    float: right;
-    text-align: right;
-}
-
-footer div.constrictor.clearfix div a {
-    color: #FFF;
-    text-decoration: none;
-}
-
-footer div.constrictor.clearfix div a:hover {
-    text-decoration: underline;
-}
-
-footer div.constrictor.clearfix div p {
-    margin: 0;
-}
-
 
 
 /*
