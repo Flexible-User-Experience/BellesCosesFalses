@@ -41,6 +41,18 @@ class Post
      * @ORM\Column(type="string", length=100, nullable=true)
      * @Gedmo\Translatable
      */
+    protected $metaTitle;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Gedmo\Translatable
+     */
+    protected $metaDescription;
+
+    /**
+     * @ORM\Column(type="string", length=100, nullable=true)
+     * @Gedmo\Translatable
+     */
     protected $subtitle;
 
     /**
@@ -63,10 +75,10 @@ class Post
 
     /**
      * @Assert\File(
-     *     maxSize="3M",
+     *     maxSize="5M",
      *     mimeTypes={"image/png", "image/jpeg", "image/pjpeg"}
      * )
-     * @Vich\UploadableField(mapping="imatge", fileNameProperty="image1")
+     * @Vich\UploadableField(mapping="article", fileNameProperty="image1")
      */
     protected $image1File;
 
@@ -76,11 +88,23 @@ class Post
     protected $image1;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Gedmo\Translatable
+     */
+    protected $altImage1;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Gedmo\Translatable
+     */
+    protected $titleImage1;
+
+    /**
      * @Assert\File(
-     *     maxSize="3M",
+     *     maxSize="5M",
      *     mimeTypes={"image/png", "image/jpeg", "image/pjpeg"}
      * )
-     * @Vich\UploadableField(mapping="imatge", fileNameProperty="image2")
+     * @Vich\UploadableField(mapping="article", fileNameProperty="image2")
      */
     protected $image2File;
 
@@ -90,11 +114,23 @@ class Post
     protected $image2;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Gedmo\Translatable
+     */
+    protected $altImage2;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Gedmo\Translatable
+     */
+    protected $titleImage2;
+
+    /**
      * @Assert\File(
-     *     maxSize="3M",
+     *     maxSize="5M",
      *     mimeTypes={"image/png", "image/jpeg", "image/pjpeg"}
      * )
-     * @Vich\UploadableField(mapping="imatge", fileNameProperty="image3")
+     * @Vich\UploadableField(mapping="article", fileNameProperty="image3")
      */
     protected $image3File;
 
@@ -102,6 +138,18 @@ class Post
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     protected $image3;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Gedmo\Translatable
+     */
+    protected $altImage3;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Gedmo\Translatable
+     */
+    protected $titleImage3;
 
     /**
      * @ORM\Column(type="boolean")
@@ -125,6 +173,18 @@ class Post
     private $categories;
 
     /**
+     * @Gedmo\Timestampable(on="create")
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $created;
+
+    /**
+     * @Gedmo\Timestampable(on="update")
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $updated;
+
+    /**
      * Constructor
      */
     public function __construct() {
@@ -141,16 +201,6 @@ class Post
     {
         return $this->translations;
     }
-
-    /**
-     * Get translated field and form locale
-     *
-    public function getTranslatedFieldAndFromLocale($field, $locale)
-    {
-        $this->getTranslations()->filter(function($entity) {
-            return (($entity->getLocale() === $locale) && ($entity->getField() === $field));
-        })->first();
-    }*/
 
     /**
      * Add translation
@@ -355,6 +405,7 @@ class Post
     public function setImage1File($imageFile)
     {
         $this->image1File = $imageFile;
+        $this->updated  = new \DateTime();
         
         return $this;
     }
@@ -378,6 +429,7 @@ class Post
     public function setImage1($image)
     {
         $this->image1 = $image;
+        $this->updated  = new \DateTime();
 
         return $this;
     }
@@ -401,6 +453,7 @@ class Post
     public function setImage2File($imageFile)
     {
         $this->image2File = $imageFile;
+        $this->updated  = new \DateTime();
         
         return $this;
     }
@@ -424,6 +477,7 @@ class Post
     public function setImage2($image)
     {
         $this->image2 = $image;
+        $this->updated  = new \DateTime();
 
         return $this;
     }
@@ -447,6 +501,8 @@ class Post
     public function setImage3File($imageFile)
     {
         $this->image3File = $imageFile;
+        $this->updated  = new \DateTime();
+
         return $this;
     }
 
@@ -469,6 +525,7 @@ class Post
     public function setImage3($image)
     {
         $this->image3 = $image;
+        $this->updated  = new \DateTime();
 
         return $this;
     }
@@ -504,6 +561,106 @@ class Post
     public function getIsActive()
     {
         return $this->isActive;
+    }
+
+    public function setAltImage1($altImage1)
+    {
+        $this->altImage1 = $altImage1;
+    }
+
+    public function getAltImage1()
+    {
+        return $this->altImage1;
+    }
+
+    public function setAltImage2($altImage2)
+    {
+        $this->altImage2 = $altImage2;
+    }
+
+    public function getAltImage2()
+    {
+        return $this->altImage2;
+    }
+
+    public function setAltImage3($altImage3)
+    {
+        $this->altImage3 = $altImage3;
+    }
+
+    public function getAltImage3()
+    {
+        return $this->altImage3;
+    }
+
+    public function setCreated($created)
+    {
+        $this->created = $created;
+    }
+
+    public function getCreated()
+    {
+        return $this->created;
+    }
+
+    public function setMetaDescription($metaDescription)
+    {
+        $this->metaDescription = $metaDescription;
+    }
+
+    public function getMetaDescription()
+    {
+        return $this->metaDescription;
+    }
+
+    public function setMetaTitle($metaTitle)
+    {
+        $this->metaTitle = $metaTitle;
+    }
+
+    public function getMetaTitle()
+    {
+        return $this->metaTitle;
+    }
+
+    public function setTitleImage1($titleImage1)
+    {
+        $this->titleImage1 = $titleImage1;
+    }
+
+    public function getTitleImage1()
+    {
+        return $this->titleImage1;
+    }
+
+    public function setTitleImage2($titleImage2)
+    {
+        $this->titleImage2 = $titleImage2;
+    }
+
+    public function getTitleImage2()
+    {
+        return $this->titleImage2;
+    }
+
+    public function setTitleImage3($titleImage3)
+    {
+        $this->titleImage3 = $titleImage3;
+    }
+
+    public function getTitleImage3()
+    {
+        return $this->titleImage3;
+    }
+
+    public function setUpdated($updated)
+    {
+        $this->updated = $updated;
+    }
+
+    public function getUpdated()
+    {
+        return $this->updated;
     }
 
     /**
