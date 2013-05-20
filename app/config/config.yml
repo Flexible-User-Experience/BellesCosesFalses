@@ -27,7 +27,7 @@ twig:
     strict_variables: %kernel.debug%
     form:
         resources:
-            - 'BellesCosesFalsesMainBundle:Admin:form.html.twig'
+            - 'FluxPageBundle:Admin:form.html.twig'
 
 # Assetic Configuration
 assetic:
