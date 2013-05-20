@@ -179,6 +179,58 @@ class Page
     protected $titleImage4;
 
     /**
+     * @Assert\File(
+     *     maxSize="5M",
+     *     mimeTypes={"image/png", "image/jpeg", "image/pjpeg"}
+     * )
+     * @Vich\UploadableField(mapping="imatge", fileNameProperty="image5")
+     */
+    protected $image5File;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    protected $image5;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Gedmo\Translatable
+     */
+    protected $altImage5;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Gedmo\Translatable
+     */
+    protected $titleImage5;
+
+    /**
+     * @Assert\File(
+     *     maxSize="5M",
+     *     mimeTypes={"image/png", "image/jpeg", "image/pjpeg"}
+     * )
+     * @Vich\UploadableField(mapping="imatge", fileNameProperty="image6")
+     */
+    protected $image6File;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    protected $image6;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Gedmo\Translatable
+     */
+    protected $altImage6;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Gedmo\Translatable
+     */
+    protected $titleImage6;
+
+    /**
      * @ORM\Column(type="smallint")
      */
     protected $position;
@@ -306,29 +358,6 @@ class Page
     {
         return $this->title;
     } 
-
-    /**
-     * Set subtitle
-     *
-     * @param string $subtitle
-     * @return Page
-     *
-    public function setSubtitle($subtitle)
-    {
-        $this->subtitle = $subtitle;
-    
-        return $this;
-    }
-
-    /**
-     * Get subtitle
-     *
-     * @return string 
-     *
-    public function getSubtitle()
-    {
-        return $this->subtitle;
-    }*/
 
     /**
      * Set summary
@@ -543,6 +572,147 @@ class Page
     }
 
     /**
+     * Set image4File
+     *
+     * @param string $imageFile
+     * @return Page
+     */
+    public function setImage4File($imageFile)
+    {
+        $this->image4File = $imageFile;
+        $this->updated  = new \DateTime();
+        return $this;
+    }
+
+    /**
+     * Get image4File
+     *
+     * @return string
+     */
+    public function getImage4File()
+    {
+        return $this->image4File;
+    }
+
+    /**
+     * Set image4
+     *
+     * @param string $image
+     * @return Page
+     */
+    public function setImage4($image)
+    {
+        $this->image4 = $image;
+        $this->updated  = new \DateTime();
+
+        return $this;
+    }
+
+    /**
+     * Get image4
+     *
+     * @return string
+     */
+    public function getImage4()
+    {
+        return $this->image4;
+    }
+
+    /**
+     * Set image5File
+     *
+     * @param string $imageFile
+     * @return Page
+     */
+    public function setImage5File($imageFile)
+    {
+        $this->image5File = $imageFile;
+        $this->updated  = new \DateTime();
+        return $this;
+    }
+
+    /**
+     * Get image5File
+     *
+     * @return string
+     */
+    public function getImage5File()
+    {
+        return $this->image5File;
+    }
+
+    /**
+     * Set image5
+     *
+     * @param string $image
+     * @return Page
+     */
+    public function setImage5($image)
+    {
+        $this->image5 = $image;
+        $this->updated  = new \DateTime();
+
+        return $this;
+    }
+
+    /**
+     * Get image5
+     *
+     * @return string
+     */
+    public function getImage5()
+    {
+        return $this->image5;
+    }
+
+    /**
+     * Set image6File
+     *
+     * @param string $imageFile
+     * @return Page
+     */
+    public function setImage6File($imageFile)
+    {
+        $this->image6File = $imageFile;
+        $this->updated  = new \DateTime();
+        return $this;
+    }
+
+    /**
+     * Get image6File
+     *
+     * @return string
+     */
+    public function getImage6File()
+    {
+        return $this->image6File;
+    }
+
+    /**
+     * Set image6
+     *
+     * @param string $image
+     * @return Page
+     */
+    public function setImage6($image)
+    {
+        $this->image6 = $image;
+        $this->updated  = new \DateTime();
+
+        return $this;
+    }
+
+    /**
+     * Get image6
+     *
+     * @return string
+     */
+    public function getImage6()
+    {
+        return $this->image6;
+    }
+
+    /**
      * Set position
      *
      * @param integer $position
@@ -642,28 +812,6 @@ class Page
         return $this->altImage4;
     }
 
-    public function setImage4($image4)
-    {
-        $this->image4 = $image4;
-        $this->updated  = new \DateTime();
-    }
-
-    public function getImage4()
-    {
-        return $this->image4;
-    }
-
-    public function setImage4File($image4File)
-    {
-        $this->image4File = $image4File;
-        $this->updated  = new \DateTime();
-    }
-
-    public function getImage4File()
-    {
-        return $this->image4File;
-    }
-
     public function setMetaDescription($metaDescription)
     {
         $this->metaDescription = $metaDescription;
@@ -742,6 +890,46 @@ class Page
     public function getTitleImage4()
     {
         return $this->titleImage4;
+    }
+
+    public function setAltImage5($altImage5)
+    {
+        $this->altImage5 = $altImage5;
+    }
+
+    public function getAltImage5()
+    {
+        return $this->altImage5;
+    }
+
+    public function setAltImage6($altImage6)
+    {
+        $this->altImage6 = $altImage6;
+    }
+
+    public function getAltImage6()
+    {
+        return $this->altImage6;
+    }
+
+    public function setTitleImage5($titleImage5)
+    {
+        $this->titleImage5 = $titleImage5;
+    }
+
+    public function getTitleImage5()
+    {
+        return $this->titleImage5;
+    }
+
+    public function setTitleImage6($titleImage6)
+    {
+        $this->titleImage6 = $titleImage6;
+    }
+
+    public function getTitleImage6()
+    {
+        return $this->titleImage6;
     }
 
     public function __toString()

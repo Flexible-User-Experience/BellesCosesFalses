@@ -15,6 +15,10 @@ page.image3: Imatge 3
 page.upload.image3: Pujar imatge 3
 page.image4: Imatge 4
 page.upload.image4: Pujar imatge 4
+page.image5: Imatge 5
+page.upload.image5: Pujar imatge 5
+page.image6: Imatge 6
+page.upload.image6: Pujar imatge 6
 page.position: Posició
 page.active: Activa
 page.actions: Accions
@@ -46,3 +50,7 @@ page.altimage3: Text alternatiu img. 3
 page.titleimage3: Títol imatge 3
 page.altimage4: Text alternatiu img. 4
 page.titleimage4: Títol imatge 4
+page.altimage5: Text alternatiu img. 5
+page.titleimage5: Títol imatge 5
+page.altimage6: Text alternatiu img. 6
+page.titleimage6: Títol imatge 6

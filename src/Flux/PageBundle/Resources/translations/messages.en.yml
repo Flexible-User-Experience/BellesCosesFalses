@@ -15,6 +15,10 @@ page.image3: Image 3
 page.upload.image3: Upload image 3
 page.image4: Image 4
 page.upload.image4: Upload image 4
+page.image5: Image 5
+page.upload.image5: Upload image 5
+page.image6: Image 6
+page.upload.image6: Upload image 6
 page.position: Position
 page.active: Active
 page.actions: Actions
@@ -46,3 +50,7 @@ page.altimage3: Alternate text img. 3
 page.titleimage3: Title image 3
 page.altimage4: Alternate text img. 4
 page.titleimage4: Title image 4
+page.altimage5: Alternate text img. 5
+page.titleimage5: Title image 5
+page.altimage6: Alternate text img. 6
+page.titleimage6: Title image 6

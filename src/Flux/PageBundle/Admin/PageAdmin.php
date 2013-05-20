@@ -97,6 +97,14 @@ class PageAdmin extends Admin
             ->add('image4', null, array('label' => $translator->trans('page.image4'), 'required' => false, 'read_only' => true))
             ->add('altImage4', 'text', array('label' => $translator->trans('page.altimage4'), 'required' => false))
             ->add('titleImage4', 'text', array('label' => $translator->trans('page.titleimage4'), 'required' => false))
+            ->add('image5File', 'file', array('label' => $translator->trans('page.upload.image5'), 'required' => false))
+            ->add('image5', null, array('label' => $translator->trans('page.image5'), 'required' => false, 'read_only' => true))
+            ->add('altImage5', 'text', array('label' => $translator->trans('page.altimage5'), 'required' => false))
+            ->add('titleImage5', 'text', array('label' => $translator->trans('page.titleimage5'), 'required' => false))
+            ->add('image6File', 'file', array('label' => $translator->trans('page.upload.image6'), 'required' => false))
+            ->add('image6', null, array('label' => $translator->trans('page.image6'), 'required' => false, 'read_only' => true))
+            ->add('altImage6', 'text', array('label' => $translator->trans('page.altimage6'), 'required' => false))
+            ->add('titleImage6', 'text', array('label' => $translator->trans('page.titleimage6'), 'required' => false))
 
             ->with('Controls') // CONTROLS
             ->add('position', 'integer', array('label' => $translator->trans('page.position')))
