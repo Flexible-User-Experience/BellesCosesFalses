@@ -84,7 +84,6 @@ class PageAdmin extends Admin
             ->add('image1', null, array('label' => $translator->trans('page.image1'), 'required' => false, 'read_only' => true))
             ->add('altImage1', 'text', array('label' => $translator->trans('page.altimage1'), 'required' => false))
             ->add('titleImage1', 'text', array('label' => $translator->trans('page.titleimage1'), 'required' => false))
-            //->add('img1', 'sonata_type_model', array('property_path' => false, 'label' => 'im1', 'required' => false, 'template' => 'MainBundle:Admin:img.html.twig'))
             ->add('image2File', 'file', array('label' => $translator->trans('page.upload.image2'), 'required' => false))
             ->add('image2', null, array('label' => $translator->trans('page.image2'), 'required' => false, 'read_only' => true))
             ->add('altImage2', 'text', array('label' => $translator->trans('page.altimage2'), 'required' => false))

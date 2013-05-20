@@ -79,7 +79,7 @@ class PostAdminController extends Controller
         // set the theme for the current Admin Form
         $this->get('twig')->getExtension('form')->renderer->setTheme($view, $this->admin->getFormTheme());
 
-        return $this->render('FluxBlogBundle:Admin:edit.html.twig', array(
+        return $this->render('FluxPageBundle:Admin:edit.html.twig', array(
             'action' => 'edit',
             'form'   => $view,
             'object' => $object,
