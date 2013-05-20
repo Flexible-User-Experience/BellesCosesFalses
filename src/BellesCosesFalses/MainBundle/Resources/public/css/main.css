@@ -212,10 +212,20 @@ div#principal div.una-columna {
     margin-bottom: 20px;
 }
 
+div#principal div.una-columna h4 {
+    margin: 0 0 20px 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
 div#principal div.una-columna h5 {
     margin: 0;
     font-size: 1em;
     font-weight: bold;
+}
+
+div#principal div.una-columna img {
+    margin-bottom: 20px;
 }
 
 div#principal div.columna-izq {
