@@ -236,7 +236,7 @@ sonata_admin:
         ajax: SonataAdminBundle::ajax_layout.html.twig
         list: SonataAdminBundle:CRUD:list.html.twig
         show: SonataAdminBundle:CRUD:show.html.twig
-        edit: SonataAdminBundle:CRUD:edit.html.twig
+        edit: FluxPageBundle:Admin:edit.html.twig # antes SonataAdminBundle:CRUD:edit.html.twig en un update de Sonata salta un error en este recurso (linea 35)
     dashboard:
         blocks:
             - { position: left, type: sonata.admin.block.admin_list }
