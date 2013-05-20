@@ -67,7 +67,7 @@ class PageAdmin extends Admin
                     'style' => 'height:400px'
             )))
             ->add('text2', 'textarea', array(
-                'label' => 'Text columna esquerra',
+                'label' => 'Text columna dreta',
                 'required' => false,
                 'attr' => array(
                     'class' => 'tinymce',
