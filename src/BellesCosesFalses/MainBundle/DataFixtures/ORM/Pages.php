@@ -75,10 +75,10 @@ class Pages implements FixtureInterface
         $page = new Page();
         $page->setCode("005-CRE");
         $page->setTitle("Crèdits");
-        $page->setSummary("Resum sobre la pàgina de Crèdits");
-        $page->setText1("Text HTML en cru amb la descripció complerta de la pàgina de Crèdits a la columna esquerra");
-        $page->setText2("Text HTML en cru amb la descripció complerta de la pàgina de Crèdits a la columna dreta");
-        $page->setImage1('005-CRE-01.png');
+        $page->setSummary("");
+        $page->setText1("Organització<br/>Lo Pati Centre d'Art Terres de l'Ebre<br/><br/>Comissariat:<br>Albert Martinez Lopez-Amor<br/><br/>Coordinació:<br/>Imma Ávalos");
+        $page->setText2("");
+        $page->setImage1('');
         $page->setPosition(5);
         $page->setIsActive(true);
 
