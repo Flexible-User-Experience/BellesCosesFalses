@@ -22,8 +22,8 @@ class PageAdmin extends Admin
         $listMapper
             //->addIdentifier('id')
             ->addIdentifier('code', null, array('label' => $translator->trans('page.code')))
-            ->addIdentifier('title', null, array('label' => $translator->trans('page.title')))
-            ->add('image1', null, array('label' => $translator->trans('page.image1'), 'template' => 'MainBundle:Admin:customimg1.html.twig'))
+            ->add('title', null, array('label' => $translator->trans('page.title')))
+            ->add('image1', null, array('label' => $translator->trans('page.image1'), 'template' => 'FluxPageBundle:Admin:customimg1.html.twig'))
             ->add('position', null, array('label' => $translator->trans('page.position')))
             ->add('is_active', 'boolean', array('label' => $translator->trans('page.active')))
             // add custom action links
@@ -45,12 +45,12 @@ class PageAdmin extends Admin
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $locale = $this->getRequest()->get('locale');
+        /*$locale = $this->getRequest()->get('locale');
         $translator = new Translator($locale);
         $datagridMapper
             ->add('title', null, array('label' => $translator->trans('page.title')))
             ->add('isActive', null, array('label' => $translator->trans('page.active')))
-        ;
+        ;*/
     }
 
     protected function configureFormFields(FormMapper $formMapper)
@@ -60,9 +60,17 @@ class PageAdmin extends Admin
         $formMapper
             ->add('code', 'text', array('label' => $translator->trans('page.code'), 'read_only' => true))
             ->add('title', 'text', array('label' => $translator->trans('page.title')))
-            ->add('summary', 'text', array('label' => $translator->trans('page.summary'), 'required' => false))
+            //->add('summary', 'text', array('label' => $translator->trans('page.summary'), 'required' => false))
             ->add('text1', 'textarea', array(
-                'label' => $translator->trans('page.text1'),
+                'label' => 'Text columna esquerra',
+                'required' => false,
+                'attr' => array(
+                    'class' => 'tinymce',
+                    'data-theme' => 'simple',
+                    'style' => 'height:400px'
+            )))
+            ->add('text2', 'textarea', array(
+                'label' => 'Text columna esquerra',
                 'required' => false,
                 'attr' => array(
                     'class' => 'tinymce',
@@ -97,7 +105,7 @@ class PageAdmin extends Admin
             ->add('position', 'integer', array('label' => $translator->trans('page.position')))
             ->add('is_active', 'checkbox', array('label' => $translator->trans('page.active'), 'required' => false))
 
-            ->with('Traduccions') // TRANSLATIONS
+            /*->with('Traduccions') // TRANSLATIONS
             ->add('translations', 'a2lix_translations', array(
             'label' => ' ',
             'fields' => array(
