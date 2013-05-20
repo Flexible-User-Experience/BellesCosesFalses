@@ -2,25 +2,25 @@ exposicio:
     pattern:  /exposicio
     defaults: { _controller: BellesCosesFalsesMainBundle:Exposicio:index }
 
+apartats:
+    pattern:  /apartats
+    defaults: { _controller: BellesCosesFalsesMainBundle:Apartats:index }
+
 artistes:
     pattern:  /artistes
     defaults: { _controller: BellesCosesFalsesMainBundle:Artistes:index }
-
-activitats:
-    pattern:  /activitats
-    defaults: { _controller: BellesCosesFalsesMainBundle:Activitats:index }
 
 agraiments:
     pattern:  /agraiments
     defaults: { _controller: BellesCosesFalsesMainBundle:Agraiments:index }
 
-blog:
-    pattern:  /blog
-    defaults: { _controller: BellesCosesFalsesMainBundle:Blog:index }
-
 credits:
     pattern:  /credits
     defaults: { _controller: BellesCosesFalsesMainBundle:Credits:index }
+
+blog:
+    pattern:  /blog
+    defaults: { _controller: BellesCosesFalsesMainBundle:Blog:index }
 
 ############################ GLOBALS
 sitemap:
