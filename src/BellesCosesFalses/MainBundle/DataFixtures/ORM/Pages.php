@@ -61,9 +61,9 @@ class Pages implements FixtureInterface
         $page->setCode("004-AGR");
         $page->setTitle("Agraïments");
         $page->setSummary("Resum sobre la pàgina d'Agraïments");
-        $page->setText1("Text HTML en cru amb la descripció complerta de la pàgina d'Agraïments a la columna esquerra");
-        $page->setText2("Text HTML en cru amb la descripció complerta de la pàgina d'Agraïments a la columna dreta");
-        $page->setImage1('004-AGR-01.png');
+        $page->setText1("Amb agraïmets a les següents institucions i galeries:<br/><br/>MACBA Museu d'Art Contemporani de Barcelona<br/>MNAC<br/>Museu de Valls<br/><br/>Galeria ADN, Barcelona<br/>Galeria Casa sin fin, Madrid");
+        $page->setText2("La imatge emprada en la comunicació de l'exposició és una interpretació de la il·lustració La Rioja y sus siete valles, d'Ernesto Reiner");
+        $page->setImage1('');
         $page->setPosition(4);
         $page->setIsActive(true);
 

@@ -226,7 +226,9 @@ div#principal div.columna-der {
     display: block;
 }
 
-
+div#principal div.columna-der p {
+    margin: 0;
+}
 
 
 /*
