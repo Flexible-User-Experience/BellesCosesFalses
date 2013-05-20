@@ -14,10 +14,10 @@ class Pages implements FixtureInterface
         /// EXPOSICIO
         $page = new Page();
         $page->setCode("001-EXP");
-        $page->setTitle("Exposició");
-        $page->setSummary("Resum sobre la pàgina d'Exposició");
-        $page->setText1("Text HTML en cru amb la descripció complerta de la pàgina Exposició a la columna esquerra");
-        $page->setText2("Text HTML en cru amb la descripció complerta de la pàgina Exposició a la columna dreta");
+        $page->setTitle("Relat de Belles Coses Falses");
+        $page->setSummary("");
+        $page->setText1("Cap lloc no és un paisatge si abans l'art no es fixa en ell i no el fixa en forma de representació artística. Aquesta és la idea que (...)<br/><br/>Els darrers anys, el paisatge coneix un apogeu que el referma com a tema estrella de les arts visuals, una categoria (...)");
+        $page->setText2("Relat de Belles Coses Falses vol repassar aquest procés de suma i expansió i, a la vegada, assajar la incorporació (...)");
         $page->setImage1('001-EXP-01.png');
         $page->setPosition(1);
         $page->setIsActive(true);
