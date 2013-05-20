@@ -11,10 +11,22 @@ file that was distributed with this source code.
 
 {% extends base_template %}
 
-{# {# {% block title %}{{ 'title_dashboard'|trans({}, 'SonataAdminBundle') }}{% endblock%}#}
-{# {# {% block breadcrumb %}{% endblock %}#}
+{% block title %}{{ 'title_dashboard'|trans({}, 'SonataAdminBundle') }}{% endblock%}
+{% block breadcrumb %}{% endblock %}
 {% block content %}
-    <h1>Administrador de continguts</h1>
-    <h4>Benvingut a l'administrador de continguts de la pàgina web www.bellescosesfalses.lopati.cat</h4>
-    <p style="margin-top: 40px">Si us plau, escull alguna opció del menú superior per continuar.</p>
+    <div class="row-fluid">
+        <div class="span6">
+            {% for block in blocks %}
+                {% if block.position == 'left' %}
+                    {{ sonata_block_render({ 'type': block.type, 'settings': block.settings}) }}
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="span6">
+            <h1>Administrador de continguts</h1>
+            <h4>Benvingut a l'administrador de continguts de la pàgina web www.bellescosesfalses.lopati.cat</h4>
+            <p style="margin-top: 40px">Si us plau, escull alguna opció del menú per continuar.</p>
+        </div>
+    </div>
+
 {% endblock %}
