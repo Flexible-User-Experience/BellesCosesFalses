@@ -14,9 +14,10 @@ class Pages implements FixtureInterface
         /// EXPOSICIO
         $page = new Page();
         $page->setCode("001-EXP");
-        $page->setTitle("Exposicions");
-        $page->setSummary("Resum sobre la pàgina d'Exposicions");
-        $page->setText1("Text HTML en cru amb la descripció complerta de la pàgina d'Exposicions");
+        $page->setTitle("Exposició");
+        $page->setSummary("Resum sobre la pàgina d'Exposició");
+        $page->setText1("Text HTML en cru amb la descripció complerta de la pàgina Exposició a la columna esquerra");
+        $page->setText2("Text HTML en cru amb la descripció complerta de la pàgina Exposició a la columna dreta");
         $page->setImage1('001-EXP-01.png');
         $page->setPosition(1);
         $page->setIsActive(true);
@@ -25,14 +26,30 @@ class Pages implements FixtureInterface
 
         ////////////////
 
+        /// APARTATS
+        $page = new Page();
+        $page->setCode("002-APA");
+        $page->setTitle("Apartats");
+        $page->setSummary("Resum sobre la pàgina d'Apartats");
+        $page->setText1("Text HTML en cru amb la descripció complerta de la pàgina Apartats a la columna esquerra");
+        $page->setText2("Text HTML en cru amb la descripció complerta de la pàgina Apartats a la columna dreta");
+        $page->setImage1('002-APA-01.png');
+        $page->setPosition(2);
+        $page->setIsActive(true);
+
+        $manager->persist($page);
+
+        ////////////////
+
         /// ARTISTES
         $page = new Page();
-        $page->setCode("002-ART");
+        $page->setCode("003-ART");
         $page->setTitle("Artistes");
         $page->setSummary("Resum sobre la pàgina d'Artistes");
-        $page->setText1("Text HTML en cru amb la descripció complerta de la pàgina d'Artistes");
-        $page->setImage1('002-ART-01.png');
-        $page->setPosition(2);
+        $page->setText1("Text HTML en cru amb la descripció complerta de la pàgina d'Artistes a la columna esquerra");
+        $page->setText2("Text HTML en cru amb la descripció complerta de la pàgina d'Artistes a la columna dreta");
+        $page->setImage1('003-ART-01.png');
+        $page->setPosition(3);
         $page->setIsActive(true);
 
         $manager->persist($page);
@@ -41,12 +58,13 @@ class Pages implements FixtureInterface
 
         /// AGRAÏMENTS
         $page = new Page();
-        $page->setCode("003-AGR");
+        $page->setCode("004-AGR");
         $page->setTitle("Agraïments");
         $page->setSummary("Resum sobre la pàgina d'Agraïments");
-        $page->setText1("Text HTML en cru amb la descripció complerta de la pàgina d'Agraïments");
-        $page->setImage1('002-AGR-01.png');
-        $page->setPosition(3);
+        $page->setText1("Text HTML en cru amb la descripció complerta de la pàgina d'Agraïments a la columna esquerra");
+        $page->setText2("Text HTML en cru amb la descripció complerta de la pàgina d'Agraïments a la columna dreta");
+        $page->setImage1('004-AGR-01.png');
+        $page->setPosition(4);
         $page->setIsActive(true);
 
         $manager->persist($page);
@@ -55,12 +73,13 @@ class Pages implements FixtureInterface
 
         /// CRÈDITS
         $page = new Page();
-        $page->setCode("004-CRE");
+        $page->setCode("005-CRE");
         $page->setTitle("Crèdits");
-        $page->setSummary("Resum sobre la pàgina d'Crèdits");
-        $page->setText1("Text HTML en cru amb la descripció complerta de la pàgina d'Crèdits");
-        $page->setImage1('004-CRE-01.png');
-        $page->setPosition(4);
+        $page->setSummary("Resum sobre la pàgina de Crèdits");
+        $page->setText1("Text HTML en cru amb la descripció complerta de la pàgina de Crèdits a la columna esquerra");
+        $page->setText2("Text HTML en cru amb la descripció complerta de la pàgina de Crèdits a la columna dreta");
+        $page->setImage1('005-CRE-01.png');
+        $page->setPosition(5);
         $page->setIsActive(true);
 
         $manager->persist($page);

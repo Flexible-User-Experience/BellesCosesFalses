@@ -118,7 +118,7 @@ a {
  */
 header {
     background: #FFF;
-    width: 220px;
+    width: 140px;
     margin: 0 10px 40px 10px;
     float: left;
     text-align: left;
@@ -189,7 +189,7 @@ header div.box-header-bottom {
 div#principal {
     min-height: 800px;
     margin: 0 10px;
-    width: 700px;
+    width: 780px;
     float: left;
 }
 

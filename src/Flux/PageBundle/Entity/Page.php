@@ -71,8 +71,8 @@ class Page
     /**
      * @ORM\Column(type="text", length=4000, nullable=true)
      * @Gedmo\Translatable
-     *
-    protected $text2;*/
+     */
+    protected $text2;
 
     /**
      * @Assert\File(
@@ -233,16 +233,6 @@ class Page
     }
 
     /**
-     * Get translated field and form locale
-     */
-    public function getTranslatedFieldAndFromLocale($field, $locale)
-    {
-        $this->getTranslations()->filter(function($entity, $locale, $field) {
-            return (($entity->getLocale() === $locale) && ($entity->getField() === $field));
-        })->first();
-    }
-
-    /**
      * Add translation
      * @param EntityTranslation
      */
@@ -391,7 +381,7 @@ class Page
      *
      * @param string $text
      * @return Page
-     *
+     */
     public function setText2($text)
     {
         $this->text2 = $text;
@@ -403,11 +393,11 @@ class Page
      * Get text2
      *
      * @return string 
-     *
+     */
     public function getText2()
     {
         return $this->text2;
-    }*/
+    }
 
     /**
      * Set image1File
@@ -748,8 +738,6 @@ class Page
     {
         return $this->updated;
     }
-
-
 
     public function getTitleImage4()
     {
