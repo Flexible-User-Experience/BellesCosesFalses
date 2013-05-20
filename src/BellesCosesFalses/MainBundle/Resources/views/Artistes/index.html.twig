@@ -2,13 +2,60 @@
 {% block titulo %}{% if page.metatitle %}{{ page.metatitle }} · {% endif %}{% endblock %}
 {% block description %}{{ page.metadescription }}{% endblock %}
 {% block recursos %}
+    <script type="text/javascript">
+        APP = [];
+
+        jQuery(document).ready(function($) {
+            var white = [255, 255, 255];
+            var color = [174, 216, 64];
+            APP.colormatrix = [white, color];
+            APP.hcd = $('#principal');
+            APP.currentcolor = APP.colormatrix[0];
+            APP.nextcolor = APP.colormatrix[1];
+            setGradientCSS3(APP.hcd, APP.currentcolor[0], APP.currentcolor[1], APP.currentcolor[2]);
+            APP.fadeOutInterval = setInterval(fireFadeOutInterval, 25);
+        });
+
+        function fireFadeOutInterval() {
+            var color = APP.currentcolor;
+            var red = color[0];
+            var green = color[1];
+            var blue = color[2];
+            if (red > APP.nextcolor[0]) red--;
+            if (green > APP.nextcolor[1]) green--;
+            if (blue > APP.nextcolor[2]) blue--;
+            setGradientCSS3(APP.hcd, red, green, blue);
+            APP.currentcolor = [red, green, blue];
+            if (red == APP.nextcolor[0] && green == APP.nextcolor[1] && blue == APP.nextcolor[2]) {
+                window.clearInterval(APP.fadeOutInterval);
+            }
+        }
+
+        /**
+         * Set the CSS3 gradient cross-browser
+         */
+        function setGradientCSS3(node, red, green, blue) {
+            if ($.browser.name == 'chrome' || $.browser.name == 'safari') {
+                node.css('background', '-webkit-gradient(linear, left top, right top, color-stop(0%,rgb(255,255,255)), color-stop(100%,rgb('+red+','+green+','+blue+')))');
+            } else if ($.browser.name == 'firefox') {
+                node.css('background', '-moz-linear-gradient(left, rgb(255,255,255) 0%, rgb('+red+','+green+','+blue+') 100%)');
+            } else if ($.browser.name == 'opera') {
+                node.css('background', '-o-linear-gradient(left, rgb(255,255,255) 0%, rgb('+red+','+green+','+blue+') 100%)');
+            } else if ($.browser.name == 'msie') {
+                node.css('background', '-ms-linear-gradient(left, rgb(255,255,255) 0%, rgb('+red+','+green+','+blue+') 100%)');
+            }
+        }
+    </script>
 {% endblock recursos %}
 {% block principal %}
-    <div class="generic-panel">
-        <h1>{{ page.title }}</h1>
-        <h2>{{ page.summary }}</h2>
+    <div class="columna-izq">
         <p>
             {{ page.text1 | raw }}
+        </p>
+    </div>
+    <div class="columna-der">
+        <p>
+            {{ page.text2 | raw }}
         </p>
     </div>
 {% endblock %}

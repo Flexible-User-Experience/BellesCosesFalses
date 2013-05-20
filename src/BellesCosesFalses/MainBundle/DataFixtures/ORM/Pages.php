@@ -29,11 +29,11 @@ class Pages implements FixtureInterface
         /// APARTATS
         $page = new Page();
         $page->setCode("002-APA");
-        $page->setTitle("Apartats");
-        $page->setSummary("Resum sobre la pàgina d'Apartats");
-        $page->setText1("Text HTML en cru amb la descripció complerta de la pàgina Apartats a la columna esquerra");
-        $page->setText2("Text HTML en cru amb la descripció complerta de la pàgina Apartats a la columna dreta");
-        $page->setImage1('002-APA-01.png');
+        $page->setTitle("Sis capítols, sis maneres de crear el paisatge");
+        $page->setSummary("");
+        $page->setText1("<strong>Verdolatria</strong><br/>Una al·lusió irònica a la fal·lera de cromatisme verd que inunda els discursos més convencionals sobre el paisatge. A la vegada...<br/><br/><strong>Regions espantoses</strong><br/>Imatges del rebuig...<br/><br/><strong>El Jardí</strong><br/>Etimològicament, un jardí és un clos tancat i protegit. Una imatge...");
+        $page->setText2("<strong>Terres promeses</strong><br/>L'anhel de trobar un món millor és cabdal...<br/><br/><strong>La pell</strong><br/>Les històries subjectives poden convertir-se en paisatge quan...<br/><br/><strong>Cap a paisages nous</strong><br/>L'últim apartat compendia el concepte central de l'exposició: sempre estem ideant paisatges nous...");
+        $page->setImage1('');
         $page->setPosition(2);
         $page->setIsActive(true);
 
@@ -45,10 +45,10 @@ class Pages implements FixtureInterface
         $page = new Page();
         $page->setCode("003-ART");
         $page->setTitle("Artistes");
-        $page->setSummary("Resum sobre la pàgina d'Artistes");
-        $page->setText1("Text HTML en cru amb la descripció complerta de la pàgina d'Artistes a la columna esquerra");
-        $page->setText2("Text HTML en cru amb la descripció complerta de la pàgina d'Artistes a la columna dreta");
-        $page->setImage1('003-ART-01.png');
+        $page->setSummary("");
+        $page->setText1("<strong>Verdolatria</strong><br/>Carlos Aires<br/>Josep Berga i Boix<br/>Francesc Guasch Homs<br/><br/><strong>Regions espantoses</strong><br/>Xavier Basiana + Jaume Orpinell<br/>Basurama<br/><br/><strong>El Jardí</strong><br/>Arquitecturia");
+        $page->setText2("<strong>Terres promeses</strong><br/>Miquel Barceló<br/>Francesc Català-Roca<br/>Patrícia Dauder<br/><br/><strong>La pell</strong><br/>Rosa Amorós<br/>Fina Miralles<br/><br/><strong>Cap a paisages nous</strong><br/>Joan Fontcuberta<br/>Albert Gusi");
+        $page->setImage1('');
         $page->setPosition(3);
         $page->setIsActive(true);
 
