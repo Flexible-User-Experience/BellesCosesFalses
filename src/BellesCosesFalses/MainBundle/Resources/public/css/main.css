@@ -205,6 +205,19 @@ div.home-panel {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#FFF',GradientType=1 );
 }
 
+div#principal div.una-columna {
+    float: left;
+    width: 780px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+div#principal div.una-columna h5 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
 div#principal div.columna-izq {
     float: left;
     width: 380px;
