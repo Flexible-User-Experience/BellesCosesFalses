@@ -18,7 +18,7 @@ class PostAdmin extends Admin
         $translator = new Translator($locale);
         $listMapper
             ->addIdentifier('id')
-            ->add('postDate', null, array('label' => $translator->trans('blog.date')))
+            ->add('postDate', null, array('label' => $translator->trans('blog.date'), 'template' => 'FluxPageBundle:Admin:custompostdate.html.twig'))
             ->add('title', null, array('label' => $translator->trans('blog.title')))
             ->add('image1', null, array('label' => $translator->trans('blog.image1'), 'template' => 'FluxPageBundle:Admin:customimg1.html.twig'))
             ->add('is_active', 'boolean', array('label' => $translator->trans('blog.active')))
