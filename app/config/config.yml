@@ -161,38 +161,14 @@ vich_uploader:
             inject_on_load: false
             delete_on_remove: true
 
-        inici:
-            uri_prefix: /uploads/images/inici
-            upload_destination: %kernel.root_dir%/../web/uploads/images/inici
-            inject_on_load: false
-            delete_on_remove: true
-
-        categories:
-            uri_prefix: /uploads/images/categories
-            upload_destination: %kernel.root_dir%/../web/uploads/images/categories
-            inject_on_load: false
-            delete_on_remove: true
-
-        vins:
-            uri_prefix: /uploads/images/vins
-            upload_destination: %kernel.root_dir%/../web/uploads/images/vins
-            inject_on_load: false
-            delete_on_remove: true
-
-        activitats:
-            uri_prefix: /uploads/images/activitats
-            upload_destination: %kernel.root_dir%/../web/uploads/images/activitats
-            inject_on_load: false
-            delete_on_remove: true
-
 # Liip Imagine Bundle
 liip_imagine:
     cache_prefix: /uploads/cache
     filter_sets:
-        imatge50x50:
-            quality: 70
+        imatge380x380:
+            quality: 90
             filters:
-                thumbnail: { size: [50, null], mode: outbound }
+                thumbnail: { size: [380, 380], mode: outbound }
         imatge100x60:
             quality: 90
             filters:

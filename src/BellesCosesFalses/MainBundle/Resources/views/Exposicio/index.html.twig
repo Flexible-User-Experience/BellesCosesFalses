@@ -4,11 +4,19 @@
 {% block recursos %}
 {% endblock recursos %}
 {% block principal %}
-    <div class="generic-panel">
+    <div class="columna-izq">
+        {% if page.image1 %}
+            <img src="{{ vich_uploader_asset(page, 'image1File') | imagine_filter('imatge380x380') }}" alt="" title="">
+        {% endif %}
         <h1>{{ page.title }}</h1>
         <h2>{{ page.summary }}</h2>
         <p>
             {{ page.text1 | raw }}
+        </p>
+    </div>
+    <div class="columna-der">
+        <p>
+            {{ page.text2 | raw }}
         </p>
     </div>
 {% endblock %}

@@ -76,10 +76,10 @@ class Page
 
     /**
      * @Assert\File(
-     *     maxSize="3M",
+     *     maxSize="5M",
      *     mimeTypes={"image/png", "image/jpeg", "image/pjpeg"}
      * )
-     * @Vich\UploadableField(mapping="inici", fileNameProperty="image1")
+     * @Vich\UploadableField(mapping="imatge", fileNameProperty="image1")
      */
     protected $image1File;
 
@@ -102,10 +102,10 @@ class Page
 
     /**
      * @Assert\File(
-     *     maxSize="3M",
+     *     maxSize="5M",
      *     mimeTypes={"image/png", "image/jpeg", "image/pjpeg"}
      * )
-     * @Vich\UploadableField(mapping="inici", fileNameProperty="image2")
+     * @Vich\UploadableField(mapping="imatge", fileNameProperty="image2")
      */
     protected $image2File;
 
@@ -128,10 +128,10 @@ class Page
 
     /**
      * @Assert\File(
-     *     maxSize="3M",
+     *     maxSize="5M",
      *     mimeTypes={"image/png", "image/jpeg", "image/pjpeg"}
      * )
-     * @Vich\UploadableField(mapping="inici", fileNameProperty="image3")
+     * @Vich\UploadableField(mapping="imatge", fileNameProperty="image3")
      */
     protected $image3File;
 
@@ -154,10 +154,10 @@ class Page
 
     /**
      * @Assert\File(
-     *     maxSize="3M",
+     *     maxSize="5M",
      *     mimeTypes={"image/png", "image/jpeg", "image/pjpeg"}
      * )
-     * @Vich\UploadableField(mapping="inici", fileNameProperty="image4")
+     * @Vich\UploadableField(mapping="imatge", fileNameProperty="image4")
      */
     protected $image4File;
 

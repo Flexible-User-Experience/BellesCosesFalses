@@ -188,7 +188,7 @@ header div.box-header-bottom {
  */
 div#principal {
     min-height: 800px;
-    margin: 0 10px;
+    margin: 20px 10px;
     width: 780px;
     float: left;
 }
@@ -204,13 +204,24 @@ div.home-panel {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#FFF',GradientType=1 );
 }
 
-div.generic-panel {
-    padding-top: 2em;
+div#principal div.columna-izq {
+    float: left;
+    width: 380px;
+    display: block;
+    margin-right: 20px;
 }
 
-div.generic-panel h1 {
+div#principal div.columna-izq h1 {
     margin-top: 0;
 }
+
+div#principal div.columna-der {
+    float: left;
+    width: 380px;
+    display: block;
+}
+
+
 
 
 /*
