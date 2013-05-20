@@ -5,6 +5,13 @@ use Doctrine\ORM\EntityRepository;
 
 class PostRepository extends EntityRepository
 {
+    public function getAllActivePostsSortedByDate()
+    {
+        return $this->getEntityManager()
+            ->createQuery('SELECT p FROM FluxBlogBundle:Post p WHERE p.isActive = 1 ORDER BY p.postDate DESC')
+            ->getResult();
+    }
+
     public function getAllPostsSortedByDateQuery()
     {
         return $this->getEntityManager()
