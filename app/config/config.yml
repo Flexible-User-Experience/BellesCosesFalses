@@ -242,6 +242,7 @@ sonata_admin:
             - { position: left, type: sonata.admin.block.admin_list }
         groups:
             Pàgines:
+            Blog:
 
 # Sonata Block
 sonata_block:
@@ -258,5 +259,10 @@ services:
     flux.admin.page:
         class: Flux\PageBundle\Admin\PageAdmin
         tags:
-            - { name: sonata.admin, manager_type: orm, group: Pàgines, label: Pagina }
+            - { name: sonata.admin, manager_type: orm, group: Pàgines, label: Pàgina }
         arguments: [null, Flux\PageBundle\Entity\Page, FluxPageBundle:PageAdmin]
+    flux.admin.blog:
+        class: Flux\BlogBundle\Admin\PostAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Blog, label: Article }
+        arguments: [null, Flux\BlogBundle\Entity\Post, FluxBlogBundle:PostAdmin]

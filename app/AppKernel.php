@@ -51,7 +51,7 @@ class AppKernel extends Kernel
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
 
             new Flux\PageBundle\FluxPageBundle(),
-            new Flux\ProductBundle\FluxProductBundle(),
+            new Flux\BlogBundle\FluxBlogBundle(),
             new BellesCosesFalses\MainBundle\BellesCosesFalsesMainBundle(),
         );
 
