@@ -8,7 +8,8 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('BellesCosesFalsesMainBundle:Default:index.html.twig');
+        return $this->render('BellesCosesFalsesMainBundle:Default:provisional.html.twig'); // PROVISIONAL - TEMPORALMENT ACTIVAT
+        // return $this->render('BellesCosesFalsesMainBundle:Default:index.html.twig'); DEFINITIU - TEMPORALMENT DESACTIVAT
     }
 
     public function sitemapAction()
