@@ -194,6 +194,13 @@ div#principal {
     font-family: "Times New Roman", times;
 }
 
+div#principal-provisional {
+    margin: 20px 10px;
+    width: 940px;
+    float: left;
+    font-family: "Times New Roman", times;
+}
+
 div.home-panel {
     background: #FFF;
     background: -moz-linear-gradient(left,  #FFF 0%, #FFF 100%);
