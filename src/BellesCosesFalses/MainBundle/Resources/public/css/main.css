@@ -110,18 +110,38 @@ a {
     text-decoration: none;
 }
 
-
+div#background-main-div.constrictor.clearfix {
+    background: url('../images/RBCF_background.jpg') 0 0 no-repeat;
+}
 
 
 /**
  * HEADER
  */
+div#main-title-div {
+    border: dashed 1px #666;
+    width: 875px;
+    height: 50px;
+    display: inline-block;
+    margin: 44px 51px 34px 32px;
+    padding: 0;
+}
+
+div#main-title-div h1 {
+    margin: 0;
+    padding: 0;
+}
+
 header {
-    background: #FFF;
-    width: 140px;
-    margin: 0 10px 40px 10px;
+    /*background: #FFF;*/
+    border: dashed 1px #666;
+    width: 156px;
+    margin: 0 28px 24px 33px;
+    padding: 10px;
     float: left;
     text-align: left;
+    overflow: hidden;
+    height: 440px;
 }
 
 header div.box-header-top {
@@ -187,11 +207,15 @@ header div.box-header-bottom {
  * MAIN
  */
 div#principal {
-    min-height: 800px;
-    margin: 20px 10px;
-    width: 780px;
+    height: 440px;
+    margin: 0 10px 24px 0;
+    width: 645px;
     float: left;
     font-family: "Times New Roman", times;
+    /*background: #FFF;*/
+    border: dashed 1px #666;
+    padding: 10px;
+    overflow: scroll;
 }
 
 div#principal-provisional {
@@ -260,6 +284,19 @@ div#principal div.columna-der p {
     margin: 0;
 }
 
+
+
+/**
+ * FOOTER
+ */
+footer {
+    border: dashed 1px #666;
+    width: 847px;
+    height: 52px;
+    display: inline-block;
+    margin: 0 51px 14px 37px;
+    padding: 10px;
+}
 
 /*
  * Actions
