@@ -132,6 +132,11 @@ div#main-title-div h1 {
     padding: 0;
 }
 
+div#main-title-div h1 a {
+    background: #FAF12E;
+    padding: 5px 10px;
+}
+
 header {
     /*background: #FFF;*/
     border: dashed 1px #666;
