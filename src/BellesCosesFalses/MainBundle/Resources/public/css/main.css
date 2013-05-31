@@ -159,7 +159,7 @@ header div.box-header-top h2 {
 }
 
 header div.box-header-menu {
-    margin: 40px 0 10px 0;
+    margin: 0 0 10px 0;
 }
 
 header div.box-header-menu ul {
@@ -261,7 +261,7 @@ div#principal div.una-columna img {
 
 div#principal div.columna-izq {
     float: left;
-    width: 380px;
+    width: 310px;
     display: block;
     margin-right: 20px;
 }
@@ -276,7 +276,7 @@ div#principal div.columna-izq p {
 
 div#principal div.columna-der {
     float: left;
-    width: 380px;
+    width: 310px;
     display: block;
 }
 
