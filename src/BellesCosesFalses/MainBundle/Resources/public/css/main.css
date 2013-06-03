@@ -111,7 +111,7 @@ a {
 }
 
 div#background-main-div.constrictor.clearfix {
-    background: url('../images/RBCF_background_2.png') 0 0 no-repeat;
+    background: url('../images/camps_web_960_1340.jpg') 0 0 repeat-y;
 }
 
 
@@ -228,7 +228,7 @@ header div.box-header-bottom {
  * MAIN
  */
 div#principal {
-    height: 440px;
+    min-height: 640px;
     margin: 0 33px 24px 0;
     width: 670px;
     float: left;
@@ -313,8 +313,7 @@ footer {
     /*border: dashed 1px #666;*/
     width: 874px;
     height: 52px;
-    position: absolute;
-    bottom: 0;
+    float: left;
     margin: 0 33px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.75);
