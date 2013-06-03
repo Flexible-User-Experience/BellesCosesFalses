@@ -213,7 +213,7 @@ header div.box-header-bottom {
  */
 div#principal {
     height: 440px;
-    margin: 0 10px 24px 0;
+    margin: 0 54px 24px 0;
     width: 645px;
     float: left;
     font-family: "Times New Roman", times;
@@ -295,12 +295,14 @@ div#principal div.columna-der p {
  * FOOTER
  */
 footer {
-    border: dashed 1px #666;
-    width: 847px;
+    /*border: dashed 1px #666;*/
+    width: 852px;
     height: 52px;
-    display: inline-block;
-    margin: 0 51px 14px 37px;
+    position: absolute;
+    bottom: 0;
+    margin: 0 51px 14px 33px;
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 /*
