@@ -19,14 +19,35 @@ body {
     font-family: 'Marvel', sans-serif;
 }
 
-/*@font-face {
-    font-family: 'GothamRnd';
-    src: url('/fonts/otf/gothamrndmedium.otf');
-    src: url('/fonts/ttf/gothamrndmedium.ttf') format('truetype'),
-         url('/fonts/svg/gothamrndmedium.svg') format('svg');
+@font-face {
+    font-family: 'Cologne Eighty';
+    src: url('../fonts/eot/Chalet Comprime Cologne Eighty.eot');
+    src: local('☺'),
+    url('../fonts/woff/Chalet Comprime Cologne Eighty.woff') format('woff'),
+    url('../fonts/ttf/Chalet Comprime Cologne Eighty.ttf') format('truetype'),
+    url('../fonts/svg/Chalet Comprime Cologne Eighty.svg') format('svg');
     font-weight: normal;
     font-style: normal;
-}*/
+}
+
+@font-face {
+    font-family: 'Cologne Seventy';
+    src: local('☺'),
+    url('../fonts/ttf/Chalet Comprime Cologne Seventy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cologne Sixty';
+    src: url('../fonts/eot/Chalet Comprime Cologne Sixty.eot');
+    src: local('☺'),
+        url('../fonts/woff/Chalet Comprime Cologne Sixty.woff') format('woff'),
+        url('../fonts/ttf/Chalet Comprime Cologne Sixty.ttf') format('truetype'),
+        url('../fonts/svg/Chalet Comprime Cologne Sixty.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -111,7 +132,7 @@ a {
 }
 
 div#background-main-div.constrictor.clearfix {
-    background: url('../images/camps_web_960_1340.jpg') 0 0 repeat-y;
+    background: url('../images/RBCF_background_4.png') 0 0 repeat-y;
 }
 
 
@@ -133,6 +154,7 @@ div#main-title-div h1 {
 }
 
 div#main-title-div h1 a {
+    /*font-family: "Cologne Seventy", Georgia, Arial;*/
     background: #FAF12E;
     padding: 5px 10px;
 }
