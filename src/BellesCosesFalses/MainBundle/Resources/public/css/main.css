@@ -254,28 +254,20 @@ div#principal {
     margin: 0 33px 24px 0;
     width: 670px;
     float: left;
-    font-family: "Times New Roman", times;
+    font-family: "Cologne Sixty", georgia, sans-serif;
     background-color: rgba(255, 255, 255, 0.75);
     padding: 10px;
-    overflow: scroll;
+    font-size: 1.3em;
 }
 
 div#principal-provisional {
     margin: 20px 10px;
     width: 940px;
     float: left;
-    font-family: "Times New Roman", times;
 }
 
 div.home-panel {
     background: #FFF;
-    background: -moz-linear-gradient(left,  #FFF 0%, #FFF 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFF), color-stop(100%,#FFF));
-    background: -webkit-linear-gradient(left,  #FFF 0%,#FFF 100%);
-    background: -o-linear-gradient(left,  #FFF 0%,#FFF 100%);
-    background: -ms-linear-gradient(left,  #FFF 0%,#FFF 100%);
-    background: linear-gradient(to right,  #FFF 0%,#FFF 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#FFF',GradientType=1 );
 }
 
 div#principal div.una-columna {
@@ -398,8 +390,7 @@ a.call-to-action.black {
 .ir {
     background-color: transparent;
     border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
+    overflow: hidden; /* IE 6/7 fallback */
     *text-indent: -9999px;
 }
 
@@ -425,7 +416,7 @@ a.call-to-action.black {
 
 .visuallyhidden {
     border: 0;
-    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
