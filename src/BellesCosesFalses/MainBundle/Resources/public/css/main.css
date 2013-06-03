@@ -315,7 +315,7 @@ footer {
     height: 52px;
     position: absolute;
     bottom: 0;
-    margin: 0 33px 14px 33px;
+    margin: 0 33px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.75);
 }
