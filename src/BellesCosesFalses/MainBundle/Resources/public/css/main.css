@@ -254,7 +254,7 @@ div#principal {
     margin: 0 33px 24px 0;
     width: 670px;
     float: left;
-    font-family: "Cologne Sixty", georgia, sans-serif;
+    font-family: "Cologne Eighty", georgia, sans-serif;
     background-color: rgba(255, 255, 255, 0.75);
     padding: 10px;
     font-size: 1.3em;
@@ -272,7 +272,7 @@ div.home-panel {
 
 div#principal div.una-columna {
     float: left;
-    width: 640px;
+    width: 100%;
     display: block;
     margin-bottom: 20px;
 }
@@ -295,9 +295,9 @@ div#principal div.una-columna img {
 
 div#principal div.columna-izq {
     float: left;
-    width: 310px;
+    width: 330px;
     display: block;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 div#principal div.columna-izq h1 {
@@ -310,7 +310,7 @@ div#principal div.columna-izq p {
 
 div#principal div.columna-der {
     float: left;
-    width: 310px;
+    width: 330px;
     display: block;
 }
 
