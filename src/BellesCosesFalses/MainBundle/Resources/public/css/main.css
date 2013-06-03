@@ -141,9 +141,8 @@ header {
     /*background: #FFF;
     border: dashed 1px #666;*/
     background-color: rgba(255, 255, 255, 0.75);
-    width: 156px;
+    width: 176px;
     margin: 0 28px 24px 33px;
-    padding: 10px;
     float: left;
     text-align: left;
     overflow: hidden;
@@ -174,23 +173,36 @@ header div.box-header-menu ul {
 }
 
 header div.box-header-menu ul li {
-    margin: 10px 0;
+    padding: 10px;
+}
+
+header div.box-header-menu ul li:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+header div.box-header-menu ul li:hover a {
+    color: #FAF12E;
 }
 
 header div.box-header-menu ul li a {
     margin: 0;
     padding: 0;
     font-size: 1em;
+    width: 100%;
+    display: block;
+}
+
+header div.box-header-menu ul li.current {
+    background: #000;
 }
 
 header div.box-header-menu ul li.current a {
-    color: #E7008A;
-    text-decoration: underline;
+    color: #FAF12E;
 }
 
-header div.box-header-menu ul li a:hover {
+/*header div.box-header-menu ul li a:hover {
     text-decoration: underline;
-}
+}*/
 
 header div.box-header-networks h3 {
     font-size: 1em;
