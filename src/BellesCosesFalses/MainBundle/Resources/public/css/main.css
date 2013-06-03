@@ -172,9 +172,9 @@ header div.box-header-menu ul {
     list-style-type: none;
 }
 
-header div.box-header-menu ul li {
-    padding: 10px;
-}
+/*header div.box-header-menu ul li {
+
+}*/
 
 header div.box-header-menu ul li:hover {
     background-color: rgba(0, 0, 0, 0.75);
@@ -186,7 +186,7 @@ header div.box-header-menu ul li:hover a {
 
 header div.box-header-menu ul li a {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     font-size: 1em;
     width: 100%;
     display: block;
@@ -203,6 +203,10 @@ header div.box-header-menu ul li.current a {
 /*header div.box-header-menu ul li a:hover {
     text-decoration: underline;
 }*/
+
+header div.box-header-networks {
+    padding: 10px;
+}
 
 header div.box-header-networks h3 {
     font-size: 1em;
