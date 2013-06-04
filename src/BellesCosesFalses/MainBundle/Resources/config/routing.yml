@@ -22,6 +22,14 @@ blog:
     pattern:  /blog
     defaults: { _controller: BellesCosesFalsesMainBundle:Blog:index }
 
+facebook:
+    pattern:  /timeline/facebook
+    defaults: { _controller: BellesCosesFalsesMainBundle:Timeline:facebook }
+
+pinterest:
+    pattern:  /timeline/pinterest
+    defaults: { _controller: BellesCosesFalsesMainBundle:Timeline:pinterest }
+
 instagram:
     pattern:  /timeline/instagram
     defaults: { _controller: BellesCosesFalsesMainBundle:Timeline:instagram }

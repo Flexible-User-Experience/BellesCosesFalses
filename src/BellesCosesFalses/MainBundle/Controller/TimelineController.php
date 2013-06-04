@@ -6,6 +6,22 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class TimelineController extends Controller
 {
+    public function facebookAction()
+    {
+        return $this->render('BellesCosesFalsesMainBundle:Timeline:facebook.html.twig', array(
+            //'result' => $result,
+            //'jsonData' => $jsonData,
+        ));
+    }
+
+    public function pinterestAction()
+    {
+        return $this->render('BellesCosesFalsesMainBundle:Timeline:pinterest.html.twig', array(
+            //'result' => $result,
+            //'jsonData' => $jsonData,
+        ));
+    }
+
     public function instagramAction()
     {
         //$em = $this->getDoctrine()->getManager();
