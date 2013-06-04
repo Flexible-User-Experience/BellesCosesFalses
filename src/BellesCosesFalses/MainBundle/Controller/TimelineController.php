@@ -15,9 +15,9 @@ class TimelineController extends Controller
         // Manage Instagram Clients from http://instagram.com/developer
         $user_id = $instagram_config['user_id'];   // davidromani UID (get from http://jelled.com/instagram/lookup-user-id)
         $access_token = $instagram_config['access_token'];     // rbcf managed client (get from http://jelled.com/instagram/access-token)
-        $count = 5;
-        $width = 128;
-        $height = 128;
+        $count = $instagram_config['count'];
+        $width = $instagram_config['width'];
+        $height = $instagram_config['height'];
 
         $url = 'https://api.instagram.com/v1/users/'.$user_id.'/media/recent/?access_token='.$access_token.'&count='.$count;
 
