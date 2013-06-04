@@ -254,7 +254,7 @@ div#principal {
     margin: 0 33px 24px 0;
     width: 670px;
     float: left;
-    font-family: "Cologne Eighty", georgia, sans-serif;
+    font-family: "Marvel", "Cologne Eighty", georgia, sans-serif;
     background-color: rgba(255, 255, 255, 0.75);
     padding: 10px;
     font-size: 1.3em;
@@ -291,6 +291,7 @@ div#principal div.una-columna h5 {
 
 div#principal div.una-columna img {
     margin-bottom: 20px;
+    margin-right: 14px;
 }
 
 div#principal div.columna-izq {

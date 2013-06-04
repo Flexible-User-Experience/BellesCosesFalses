@@ -22,6 +22,10 @@ blog:
     pattern:  /blog
     defaults: { _controller: BellesCosesFalsesMainBundle:Blog:index }
 
+instagram:
+    pattern:  /timeline/instagram
+    defaults: { _controller: BellesCosesFalsesMainBundle:Timeline:instagram }
+
 ############################ GLOBALS
 sitemap:
     pattern:        /sitemap/

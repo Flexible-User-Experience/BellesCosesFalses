@@ -1,0 +1,23 @@
+{% extends 'BellesCosesFalsesMainBundle:Global:layout.html.twig' %}
+{% block description %}
+{% endblock %}
+{% block recursos %}
+{% endblock recursos %}
+{% block principal %}
+    <div class="una-columna">
+        <h4>Instagram timeline</h4>
+        {% for value in jsonData.data %}
+            <a href="{{ value.link }}" target="_blank">
+                <img src="{{ value.images.thumbnail.url }}" alt="{% if value.caption %}{{ value.caption.text }}{% endif %}" width="{{ value.images.thumbnail.width }}" height="{{ value.images.thumbnail.height }}">
+            </a>
+        {% endfor %}
+    </div>
+    <div class="columna-izq">
+        <p>
+        </p>
+    </div>
+    <div class="columna-der">
+        <p>
+        </p>
+    </div>
+{% endblock %}
