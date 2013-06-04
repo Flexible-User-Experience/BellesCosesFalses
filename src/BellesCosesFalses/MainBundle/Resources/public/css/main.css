@@ -296,9 +296,9 @@ div#principal div.una-columna img {
 
 div#principal div.columna-izq {
     float: left;
-    width: 330px;
+    width: 300px;
     display: block;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 div#principal div.columna-izq h1 {
@@ -311,7 +311,7 @@ div#principal div.columna-izq p {
 
 div#principal div.columna-der {
     float: left;
-    width: 330px;
+    width: 300px;
     display: block;
 }
 
