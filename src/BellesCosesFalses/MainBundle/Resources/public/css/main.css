@@ -353,7 +353,7 @@ footer {
     float: left;
     margin: 14px 33px 37px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: transparent; /*rgba(0, 0, 0, 0.85);*/
 }
 
 footer a {
