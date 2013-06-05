@@ -154,9 +154,8 @@ div#background-main-div.constrictor.clearfix {
  * HEADER
  */
 div#main-title-div {
-    /*border: dashed 1px #666;*/
     width: 875px;
-    height: 50px;
+    height: 87px;
     display: inline-block;
     margin: 44px 51px 34px 32px;
     padding: 0;
