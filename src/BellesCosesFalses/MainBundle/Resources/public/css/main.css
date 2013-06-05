@@ -261,7 +261,7 @@ header div.box-header-bottom {
  * MAIN
  */
 div#principal {
-    min-height: 640px;
+    min-height: 400px;
     margin: 0 33px 24px 0;
     width: 630px;
     float: left;
