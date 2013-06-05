@@ -174,9 +174,7 @@ div#main-title-div h1 a {
 }
 
 header {
-    /*background: #FFF;
-    border: dashed 1px #666;*/
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.85);
     width: 176px;
     margin: 0 28px 24px 33px;
     float: left;
@@ -213,7 +211,7 @@ header div.box-header-menu ul {
 }*/
 
 header div.box-header-menu ul li:hover {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 header div.box-header-menu ul li:hover a {
@@ -269,7 +267,7 @@ div#principal {
     width: 630px;
     float: left;
     font-family: "Marvel", georgia, sans-serif;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 30px;
     font-size: 17px;
 }
@@ -352,14 +350,23 @@ div#principal div.columna-der p strong {
  * FOOTER
  */
 footer {
-    /*border: dashed 1px #666;*/
     width: 874px;
-    height: 52px;
     float: left;
-    margin: 0 33px;
+    margin: 14px 33px 37px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.85);
 }
+
+footer a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer a img {
+    vertical-align: text-top;
+}
+
+
 
 /*
  * Actions
