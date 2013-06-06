@@ -34,8 +34,10 @@ class TimelineController extends Controller
         $count = $instagram_config['count'];
         $width = $instagram_config['width'];
         $height = $instagram_config['height'];
+        $hashtag = $instagram_config['hashtag'];
 
-        $url = 'https://api.instagram.com/v1/users/'.$user_id.'/media/recent/?access_token='.$access_token.'&count='.$count;
+        //$url = 'https://api.instagram.com/v1/users/'.$user_id.'/media/recent/?access_token='.$access_token.'&count='.$count;
+        $url = 'https://api.instagram.com/v1/tags/'.$hashtag.'/media/recent?access_token='.$access_token; //.'&count='.$count;
 
         // Also Perhaps you should cache the results as the instagram API is slow
         /*$cache = './'.sha1($url).'.json';
@@ -48,7 +50,7 @@ class TimelineController extends Controller
         }*/
         $jsonData = json_decode((file_get_contents($url)));
 
-        $result = '<div id="instagram">'.PHP_EOL;
+        /*$result = '<div id="instagram">'.PHP_EOL;
         foreach ($jsonData->data as $key=>$value) {
             if (isset($value->caption)) {
                 $result .= "\t".'<a class="fancybox" data-fancybox-group="gallery" title="'.htmlentities($value->caption->text);
@@ -59,10 +61,19 @@ class TimelineController extends Controller
                 $result .= $value->caption->text.'" width="'.$width.'" height="'.$height.'" /></a>'.PHP_EOL;
             }
         }
-        $result .= '</div>'.PHP_EOL;
+        $result .= '</div>'.PHP_EOL;*/
+
+        /*$query = "sky";
+        $api = $this->get('instaphp');
+        $response = $api->Tags->Search($query);
+        $userInfo = $response->data[0];
+        // getting all the pages of results
+        do {
+            $pages[] = $response->data;
+        } while($response = $response->getNextPage());*/
 
         return $this->render('BellesCosesFalsesMainBundle:Timeline:instagram.html.twig', array(
-            'result' => $result,
+            //'result' => $result,
             'jsonData' => $jsonData,
         ));
     }

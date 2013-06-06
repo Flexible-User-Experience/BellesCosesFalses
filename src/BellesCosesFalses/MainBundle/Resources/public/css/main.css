@@ -309,6 +309,33 @@ div#principal div.una-columna img {
     margin-right: 14px;
 }
 
+div#principal div.una-columna div.instagram-block {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+div#principal div.una-columna div.instagram-block img.profile-picture {
+    margin: 0 10px 30px 0;
+}
+
+div#principal div.una-columna div.instagram-block a img {
+    margin: 0 0 10px 0;
+}
+
+div#principal div.una-columna div.instagram-block div.instagram-block-text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+div#principal div.una-columna div.instagram-block div.instagram-block-text h5 {
+    text-decoration: none;
+    margin: 0;
+}
+
+div#principal div.una-columna div.instagram-block div.instagram-block-text img {
+    margin: -2px 10px 0 0;
+}
+
 div#principal div.columna-izq {
     float: left;
     width: 300px;

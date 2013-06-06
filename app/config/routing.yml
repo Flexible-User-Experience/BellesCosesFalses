@@ -7,6 +7,10 @@ maincontroller:
     type:     annotation
     prefix:   /
 
+OhInstagramBundle:
+    resource: "@OhInstagramBundle/Resources/config/routing.yml"
+    prefix:   /
+
 sonata:
     resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
     prefix: /admin

@@ -48,6 +48,8 @@ class AppKernel extends Kernel
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
 
+            new Oh\InstagramBundle\OhInstagramBundle(),
+
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
 
             new Flux\PageBundle\FluxPageBundle(),

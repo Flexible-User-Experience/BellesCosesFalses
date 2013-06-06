@@ -5,11 +5,23 @@
 {% endblock recursos %}
 {% block principal %}
     <div class="una-columna">
-        <h4>Instagram timeline</h4>
+        <h4>Contingut publicat a Instagram etiquetat amb #relatpaisatge</h4>
         {% for value in jsonData.data %}
-            <a href="{{ value.link }}" target="_blank">
-                <img src="{{ value.images.thumbnail.url }}" alt="{% if value.caption %}{{ value.caption.text }}{% endif %}" width="{{ value.images.thumbnail.width }}" height="{{ value.images.thumbnail.height }}">
-            </a>
+            <div class="instagram-block">
+                <a href="{{ value.link }}" target="_blank">
+                    <img src="{{ value.images.low_resolution.url }}" alt="{% if value.caption %}{{ value.caption.text }}{% endif %}" width="193" height="193">
+                </a>
+                {% if value.user.profile_picture %}
+                    <br/>
+                    <img class="profile-picture" src="{{ value.user.profile_picture }}" alt="profile picture" width="42" height="42">
+                {% endif %}
+                <div class="instagram-block-text">
+                    {% if value.user.full_name %}<h5>{{ value.user.full_name }}</h5>{% endif %}
+                    {% if value.likes.count %}
+                        <img src="{{ asset('bundles/bellescosesfalsesmain/images/love.png') }}" alt="love icon"><span class="likes">{{ value.likes.count }}</span>
+                    {% endif %}
+                </div>
+            </div>
         {% endfor %}
     </div>
 {% endblock %}

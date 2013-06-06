@@ -34,7 +34,8 @@
         "knplabs/knp-menu": "1.1.*@dev",
         "knplabs/knp-menu-bundle": "1.1.*@dev",
         "knplabs/knp-paginator-bundle": "dev-master",
-        "sonata-project/user-bundle": "2.2.*@dev"
+        "sonata-project/user-bundle": "2.2.*@dev",
+        "oh/instagram-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
