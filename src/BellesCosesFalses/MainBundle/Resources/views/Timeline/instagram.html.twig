@@ -16,7 +16,11 @@
                     <img class="profile-picture" src="{{ value.user.profile_picture }}" alt="profile picture" width="42" height="42">
                 {% endif %}
                 <div class="instagram-block-text">
-                    {% if value.user.full_name %}<h5>{{ value.user.full_name }}</h5>{% endif %}
+                    {% if value.user.full_name %}
+                        <h5>{{ value.user.full_name }}</h5>
+                    {% else %}
+                        <h5>{{ value.user.username }}</h5>
+                    {% endif %}
                     {% if value.likes.count %}
                         <img src="{{ asset('bundles/bellescosesfalsesmain/images/love.png') }}" alt="love icon"><span class="likes">{{ value.likes.count }}</span>
                     {% endif %}
