@@ -151,6 +151,7 @@ div#background-main-div.constrictor.clearfix {
 }
 
 
+
 /**
  * HEADER
  */
@@ -180,10 +181,6 @@ header {
     float: left;
     text-align: left;
     overflow: hidden;
-}
-
-header div.box-header-top {
-
 }
 
 header div.box-header-top h1 {
@@ -293,7 +290,6 @@ div#principal div.una-columna h5 {
     margin: 0;
     font-size: 1em;
     font-weight: bold;
-    /*font-family: "Marvel Bold", "Cologne Eighty", georgia, sans-serif;*/
     text-decoration: underline;
 }
 
@@ -404,9 +400,9 @@ div#principal hr {
 footer {
     width: 874px;
     float: left;
-    margin: 14px 33px 37px;
+    margin: 80px 33px 37px;
     padding: 10px;
-    background-color: transparent; /*rgba(0, 0, 0, 0.85);*/
+    background-color: transparent;
 }
 
 footer a {
@@ -416,47 +412,6 @@ footer a {
 
 footer a img {
     vertical-align: text-top;
-}
-
-
-
-/*
- * Actions
- */
-a.call-to-action {
-    padding: 5px 20px;
-    border-radius: 4px;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.25s;
-    -moz-transition: background-color 0.25s;
-    -webkit-transition: background-color 0.25s;
-    -o-transition: background-color 0.25s;
-    text-align: center;
-    background-color: #6C1D45;
-    text-transform: uppercase;
-    box-shadow: 2px 2px 3px #666;
-    font-size: 16px;
-}
-
-a.call-to-action:hover {
-    background-color: #000;
-}
-
-a.call-to-action.red {
-    background: #D84359;
-}
-
-a.call-to-action.grey {
-    background: #999;
-}
-
-a.call-to-action.green {
-    background: #8BC06D;
-}
-
-a.call-to-action.black {
-    background: #000;
 }
 
 
