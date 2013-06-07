@@ -11,11 +11,11 @@ artistes:
     defaults: { _controller: BellesCosesFalsesMainBundle:Artistes:index }
 
 agraiments:
-    pattern:  /concurs-instagram
+    pattern:  /concurs
     defaults: { _controller: BellesCosesFalsesMainBundle:Agraiments:index }
 
 credits:
-    pattern:  /credits-i-agraiments
+    pattern:  /credits
     defaults: { _controller: BellesCosesFalsesMainBundle:Credits:index }
 
 blog:
