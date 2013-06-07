@@ -17,6 +17,7 @@ body {
     font-size: 1em;
     line-height: 1.4;
     font-family: 'Marvel', sans-serif;
+    background: url('../images/RBCF_background_4.png') 50% 0 repeat-y;
 }
 
 @font-face {
@@ -146,7 +147,7 @@ a {
 }
 
 div#background-main-div.constrictor.clearfix {
-    background: url('../images/RBCF_background_4.png') 0 0 repeat-y;
+
 }
 
 
