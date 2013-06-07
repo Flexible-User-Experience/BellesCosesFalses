@@ -6,22 +6,19 @@
 {% block principal %}
     {% if posts | length > 0 %}
         {% for post in posts %}
-            <div class="una-columna">
-                {% if post.image1 %}
-                    <img src="{{ vich_uploader_asset(post, 'image1File') | imagine_filter('imatge380x380') }}" alt="{{ post.altImage1 }}" title="{{ post.titleImage1 }}">
-                {% endif %}
+            <div class="blog-una-columna">
+                <h6>{{ post.postDate | date('d/m/Y') }}</h6>
                 <h4>{{ post.title }}</h4>
+                {% if post.summary %}<h5>{{ post.summary }}</h5>{% endif %}
+                {% if post.image1 %}
+                    <h2><img src="{{ vich_uploader_asset(post, 'image1File') | imagine_filter('imatge380x380') }}" alt="{{ post.altImage1 }}" title="{{ post.titleImage1 }}"></h2>
+                {% endif %}
+                {{ post.text1 | raw }}
+                {% if post.image2 %}
+                    <h2><img src="{{ vich_uploader_asset(post, 'image2File') | imagine_filter('imatge380x380') }}" alt="{{ post.altImage2 }}" title="{{ post.titleImage2 }}"></h2>
+                {% endif %}
             </div>
-            <div class="columna-izq">
-                <p>
-                    {{ post.text1 | raw }}
-                </p>
-            </div>
-            <div class="columna-der">
-                <p>
-                    {{ post.text2 | raw }}
-                </p>
-            </div>
+            <hr>
         {% endfor %}
     {% else %}
         <div class="una-columna">

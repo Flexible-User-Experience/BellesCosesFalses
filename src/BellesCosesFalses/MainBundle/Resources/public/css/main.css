@@ -343,11 +343,6 @@ div#principal div.columna-izq p {
     margin: 0;
 }
 
-/*div#principal div.columna-izq p strong {
-    font-family: "Marvel Bold", "Cologne Eighty", georgia, sans-serif;
-    text-decoration: underline;
-}*/
-
 div#principal div.columna-der {
     float: left;
     width: 300px;
@@ -358,11 +353,47 @@ div#principal div.columna-der p {
     margin: 0;
 }
 
-/*div#principal div.columna-der p strong {
-    font-family: "Marvel Bold", "Cologne Eighty", georgia, sans-serif;
-    text-decoration: underline;
-}*/
 
+
+/**
+ * BLOG
+ */
+div#principal div.blog-una-columna h6 {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+div#principal div.blog-una-columna h4 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Marvel Bold", "Cologne Eighty", georgia, sans-serif;
+}
+
+div#principal div.blog-una-columna h5 {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+div#principal div.blog-una-columna h2 {
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+div#principal div.blog-una-columna p {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+div#principal hr {
+    border-top: solid 1px #000;
+    height: 0;
+    margin: 10px 0 40px 0;
+}
 
 
 

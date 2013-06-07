@@ -57,7 +57,7 @@ class PostAdmin extends Admin
             ->add('postDate', null, array('label' => $translator->trans('blog.date')))
             //->add('categories', 'sonata_type_model_list', array('label' => $translator->trans('blog.category')), array(/*'by_reference' => false*/))
             ->add('title', 'text', array('label' => $translator->trans('blog.title')))
-            ->add('subtitle', 'text', array('label' => $translator->trans('blog.subtitle'), 'required' => false))
+            //->add('subtitle', 'text', array('label' => $translator->trans('blog.subtitle'), 'required' => false))
             ->add('summary', 'text', array('label' => $translator->trans('blog.summary'), 'required' => false))
             ->add('text1', 'textarea', array(
                 'label' => 'Text columna esquerra',
@@ -81,10 +81,10 @@ class PostAdmin extends Admin
             ->add('image2', null, array('label' => $translator->trans('page.image2'), 'required' => false, 'read_only' => true))
             ->add('altImage2', 'text', array('label' => $translator->trans('page.altimage2'), 'required' => false))
             ->add('titleImage2', 'text', array('label' => $translator->trans('page.titleimage2'), 'required' => false))
-            ->add('image3File', 'file', array('label' => $translator->trans('page.upload.image3'), 'required' => false))
-            ->add('image3', null, array('label' => $translator->trans('page.image3'), 'required' => false, 'read_only' => true))
-            ->add('altImage3', 'text', array('label' => $translator->trans('page.altimage3'), 'required' => false))
-            ->add('titleImage3', 'text', array('label' => $translator->trans('page.titleimage3'), 'required' => false))
+            //->add('image3File', 'file', array('label' => $translator->trans('page.upload.image3'), 'required' => false))
+            //->add('image3', null, array('label' => $translator->trans('page.image3'), 'required' => false, 'read_only' => true))
+            //->add('altImage3', 'text', array('label' => $translator->trans('page.altimage3'), 'required' => false))
+            //->add('titleImage3', 'text', array('label' => $translator->trans('page.titleimage3'), 'required' => false))
 
             ->with('Controls') // CONTROLS
             ->add('is_active', 'checkbox', array('label' => $translator->trans('page.active'), 'required' => false))
