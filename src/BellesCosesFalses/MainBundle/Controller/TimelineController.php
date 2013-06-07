@@ -37,7 +37,7 @@ class TimelineController extends Controller
         $hashtag = $instagram_config['hashtag'];
 
         //$url = 'https://api.instagram.com/v1/users/'.$user_id.'/media/recent/?access_token='.$access_token.'&count='.$count;
-        $url = 'https://api.instagram.com/v1/tags/'.$hashtag.'/media/recent?access_token='.$access_token; //.'&count='.$count;
+        $url = 'https://api.instagram.com/v1/tags/'.$hashtag.'/media/recent?access_token='.$access_token.'&count='.$count;
 
         // Also Perhaps you should cache the results as the instagram API is slow
         /*$cache = './'.sha1($url).'.json';
