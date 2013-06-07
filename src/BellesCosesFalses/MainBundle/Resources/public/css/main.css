@@ -205,10 +205,6 @@ header div.box-header-menu ul {
     list-style-type: none;
 }
 
-/*header div.box-header-menu ul li {
-
-}*/
-
 header div.box-header-menu ul li:hover {
     background-color: rgba(0, 0, 0, 0.85);
 }
@@ -232,10 +228,6 @@ header div.box-header-menu ul li.current {
 header div.box-header-menu ul li.current a {
     color: #FAF12E;
 }
-
-/*header div.box-header-menu ul li a:hover {
-    text-decoration: underline;
-}*/
 
 header div.box-header-networks {
     padding: 10px;
@@ -265,7 +257,7 @@ div#principal {
     margin: 0 33px 24px 0;
     width: 630px;
     float: left;
-    font-family: "Marvel", georgia, sans-serif;
+    font-family: arial, georgia, sans-serif;
     background-color: rgba(255, 255, 255, 0.85);
     padding: 30px;
     font-size: 17px;
@@ -292,7 +284,7 @@ div#principal div.una-columna h4 {
     margin: 0 0 20px 0;
     font-size: 1em;
     font-weight: bold;
-    font-family: "Marvel Bold", "Cologne Eighty", georgia, sans-serif;
+    /*font-family: "Marvel Bold", "Cologne Eighty", georgia, sans-serif;*/
     text-decoration: underline;
 }
 
@@ -300,7 +292,7 @@ div#principal div.una-columna h5 {
     margin: 0;
     font-size: 1em;
     font-weight: bold;
-    font-family: "Marvel Bold", "Cologne Eighty", georgia, sans-serif;
+    /*font-family: "Marvel Bold", "Cologne Eighty", georgia, sans-serif;*/
     text-decoration: underline;
 }
 
@@ -351,10 +343,10 @@ div#principal div.columna-izq p {
     margin: 0;
 }
 
-div#principal div.columna-izq p strong {
+/*div#principal div.columna-izq p strong {
     font-family: "Marvel Bold", "Cologne Eighty", georgia, sans-serif;
     text-decoration: underline;
-}
+}*/
 
 div#principal div.columna-der {
     float: left;
@@ -366,10 +358,12 @@ div#principal div.columna-der p {
     margin: 0;
 }
 
-div#principal div.columna-der p strong {
+/*div#principal div.columna-der p strong {
     font-family: "Marvel Bold", "Cologne Eighty", georgia, sans-serif;
     text-decoration: underline;
-}
+}*/
+
+
 
 
 /**
