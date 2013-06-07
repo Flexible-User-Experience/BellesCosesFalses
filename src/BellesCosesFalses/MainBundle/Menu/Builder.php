@@ -14,8 +14,8 @@ class Builder extends ContainerAware
         $menu->addChild('EXPOSICIÓ', array('route' => 'exposicio'));
         $menu->addChild('APARTATS', array('route' => 'apartats'));
         $menu->addChild('ARTISTES', array('route' => 'artistes'));
-        $menu->addChild('AGRAÏMENTS', array('route' => 'agraiments'));
-        $menu->addChild('CRÈDITS', array('route' => 'credits'));
+        $menu->addChild('CONCURS INSTAGRAM', array('route' => 'agraiments'));
+        $menu->addChild('CRÈDITS I AGRAÏMENTS', array('route' => 'credits'));
         $menu->addChild('BLOG', array('route' => 'blog'));
         return $menu;
     }
