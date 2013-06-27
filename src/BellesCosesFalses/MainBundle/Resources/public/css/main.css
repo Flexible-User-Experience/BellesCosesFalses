@@ -18,7 +18,11 @@ body {
     line-height: 1.4;
     font-family: 'Marvel', sans-serif;
     background: url('../images/RBCF_background_4.png') 50% 0 repeat-y;
-    
+    -webkit-background-size: 100%; /* Safari and Chrome */
+    -moz-background-size: 100%; /* Firefox */
+    -ms-background-size: 100%; /* Internet Explorer */
+    -o-background-size: 100%; /* Opera */
+    background-size: 100%; /* CSS3 */
 }
 
 @font-face {
