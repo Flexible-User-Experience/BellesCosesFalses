@@ -22,7 +22,7 @@ class PageAdmin extends Admin
             ->add('title', null, array('label' => $translator->trans('page.title')))
             ->add('image1', null, array('label' => $translator->trans('page.image1'), 'template' => 'FluxPageBundle:Admin:customimg1.html.twig'))
             ->add('position', null, array('label' => $translator->trans('page.position')))
-            ->add('is_active', 'boolean', array('label' => $translator->trans('page.active')))
+            ->add('is_active', 'boolean', array('label' => $translator->trans('page.active'), 'editable' => true))
             // add custom action links
             ->add('_action', 'actions', array(
                 'actions' => array(
