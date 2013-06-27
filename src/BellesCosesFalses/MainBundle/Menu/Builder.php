@@ -13,7 +13,7 @@ class Builder extends ContainerAware
         $menu->setCurrentUri($this->container->get('request')->getRequestUri());
         $menu->addChild('EXPOSICIÓ', array('route' => 'exposicio'));
         //$menu->addChild('APARTATS', array('route' => 'apartats'));
-        $menu->addChild('ARTISTES', array('route' => 'artistes'));
+        //$menu->addChild('ARTISTES', array('route' => 'artistes'));
         $menu->addChild('BLOG', array('route' => 'blog'));
         $menu->addChild('CONCURS', array('route' => 'agraiments'));
         $menu->addChild('CRÈDITS', array('route' => 'credits'));
