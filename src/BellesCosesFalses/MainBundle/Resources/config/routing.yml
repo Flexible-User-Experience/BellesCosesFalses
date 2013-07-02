@@ -1,3 +1,7 @@
+home:
+    pattern:        /
+    defaults:       { _controller: BellesCosesFalsesMainBundle:Default:index }
+
 exposicio:
     pattern:  /exposicio
     defaults: { _controller: BellesCosesFalsesMainBundle:Exposicio:index }
@@ -22,6 +26,10 @@ blog:
     pattern:  /blog
     defaults: { _controller: BellesCosesFalsesMainBundle:Blog:index }
 
+blog_detail:
+    pattern:  /blog/{year}/{month}/{day}/{titleslug}/{id}
+    defaults: { _controller: BellesCosesFalsesMainBundle:Blog:detail }
+
 facebook:
     pattern:  /timeline/facebook
     defaults: { _controller: BellesCosesFalsesMainBundle:Timeline:facebook }
@@ -39,6 +47,3 @@ sitemap:
     pattern:        /sitemap/
     defaults:       { _controller: BellesCosesFalsesMainBundle:Default:sitemap, _format: xml }
 
-home:
-    pattern:        /
-    defaults:       { _controller: BellesCosesFalsesMainBundle:Default:index }

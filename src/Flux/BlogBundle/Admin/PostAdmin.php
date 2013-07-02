@@ -60,7 +60,7 @@ class PostAdmin extends Admin
             //->add('subtitle', 'text', array('label' => $translator->trans('blog.subtitle'), 'required' => false))
             ->add('summary', 'text', array('label' => $translator->trans('blog.summary'), 'required' => false))
             ->add('text1', 'textarea', array(
-                'label' => 'Text columna esquerra',
+                'label' => 'Text',
                 'required' => false,
                 'attr' => array(
                     'class' => 'tinymce',
