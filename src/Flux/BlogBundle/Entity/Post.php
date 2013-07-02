@@ -152,6 +152,22 @@ class Post
     protected $titleImage3;
 
     /**
+     * @Assert\File(maxSize="16M")
+     * @Vich\UploadableField(mapping="pdf", fileNameProperty="document1")
+     */
+    private $document1File;
+
+    /**
+     * @ORM\Column(type="string", length=255, name="document1", nullable=true)
+     */
+    protected $document1;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    protected $document1Title;
+
+    /**
      * @ORM\Column(type="boolean")
      */
     protected $isActive;
@@ -661,6 +677,57 @@ class Post
     public function getUpdated()
     {
         return $this->updated;
+    }
+
+    /**
+     * @param mixed $document1
+     */
+    public function setDocument1($document1)
+    {
+        $this->document1 = $document1;
+        $this->updated  = new \DateTime();
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDocument1()
+    {
+        return $this->document1;
+    }
+
+    /**
+     * @param mixed $document1File
+     */
+    public function setDocument1File($document1File)
+    {
+        $this->document1File = $document1File;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDocument1File()
+    {
+        return $this->document1File;
+    }
+
+    /**
+     * @param mixed $document1Title
+     */
+    public function setDocument1Title($document1Title)
+    {
+        $this->document1Title = $document1Title;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDocument1Title()
+    {
+        return $this->document1Title;
     }
 
     /**

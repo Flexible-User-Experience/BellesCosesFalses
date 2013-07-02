@@ -86,6 +86,11 @@ class PostAdmin extends Admin
             //->add('altImage3', 'text', array('label' => $translator->trans('page.altimage3'), 'required' => false))
             //->add('titleImage3', 'text', array('label' => $translator->trans('page.titleimage3'), 'required' => false))
 
+            ->with('Arxius') // ADJUNTS
+            ->add('document1File', 'file', array('label' => 'Arxiu 1', 'required'=>false))
+            ->add('document1', null, array('label' => 'Nom arxiu 1', 'required'=>false, 'read_only'=>true,))
+            ->add('document1Title', 'text', array('label' => 'Títol arxiu 1', 'required'=>false))
+
             ->with('Controls') // CONTROLS
             ->add('is_active', 'checkbox', array('label' => $translator->trans('page.active'), 'required' => false))
 
