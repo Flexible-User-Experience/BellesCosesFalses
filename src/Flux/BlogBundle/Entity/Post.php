@@ -679,9 +679,6 @@ class Post
         return $this->updated;
     }
 
-    /**
-     * @param mixed $document1
-     */
     public function setDocument1($document1)
     {
         $this->document1 = $document1;

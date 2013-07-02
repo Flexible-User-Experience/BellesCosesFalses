@@ -9,6 +9,9 @@
                 <h6>{{ post.postDate | date('d/m/Y') }}</h6>
                 <h4><a href="{{ path('blog_detail', {'year' : post.postDate | date('Y'), 'month' : post.postDate | date('m'), 'day' : post.postDate | date('d'), 'titleslug' : post.titleSlug, 'id' : post.id }) }}">{{ post.title }}</a></h4>
                 {% if post.summary %}<h5>{{ post.summary }}</h5>{% endif %}
+                {% if post.document1Title and post.document1  %}
+                    <img style="width:24px;margin-right:5px;" src="{{ asset('bundles/bellescosesfalsesmain/images/download-icon.png') }}" alt="Descarrega" title="Descarrega"/><a target="_blank" rel='external' href='{{ vich_uploader_asset(post, 'document1File')  }}'>{{ post.document1Title }}</a>
+                {% endif %}
                 {% if post.image1 %}
                     <h2><img src="{{ vich_uploader_asset(post, 'image1File') | imagine_filter('imatge380x380') }}" alt="{{ post.altImage1 }}" title="{{ post.titleImage1 }}"></h2>
                 {% endif %}
