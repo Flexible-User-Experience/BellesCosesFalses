@@ -19,6 +19,9 @@
             </div>
             <hr>
         {% endfor %}
+        <div class="una-columna">
+            <h5>{{ knp_pagination_render(posts) }}</h5>
+        </div>
     {% else %}
         <div class="una-columna">
             <h5>Ho sentim, encara no hi ha cap article publicat.</h5>

@@ -9,9 +9,19 @@ class BlogController extends Controller
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $posts = $em->getRepository('FluxBlogBundle:Post')->getAllActivePostsSortedByDate();
+        //$posts = $em->getRepository('FluxBlogBundle:Post')->getAllActivePostsSortedByDate();
+
+        $dql   = "SELECT p FROM FluxBlogBundle:Post p WHERE p.isActive = 1 ORDER BY p.postDate DESC";
+        $query = $em->createQuery($dql);
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $query,
+            $this->get('request')->query->get('page', 1) /*page number*/,
+            5 /*limit per page*/
+        );
+
         return $this->render('BellesCosesFalsesMainBundle:Blog:index.html.twig', array(
-            'posts' => $posts,
+            'posts' => $pagination,
         ));
     }
 
