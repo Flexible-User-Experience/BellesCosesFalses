@@ -3,6 +3,9 @@
 namespace BellesCosesFalses\MainBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
+use Flux\BlogBundle\Entity\Post;
 
 class BlogController extends Controller
 {
@@ -25,18 +28,19 @@ class BlogController extends Controller
         ));
     }
 
-    public function detailAction($year, $month, $day, $titleslug, $id)
+    /**
+     * @ParamConverter("post", class="FluxBlogBundle:Post", options={"id" = "id"})
+     */
+    public function detailAction($year, $month, $day, $titleslug, Post $post)
     {
-        $em = $this->getDoctrine()->getManager();
-        $post = $em->getRepository('FluxBlogBundle:Post')->find($id);
-        if (!$post) throw $this->createNotFoundException("No existeix l'article " . $id);
+        if (!$post) throw $this->createNotFoundException("No existeix l'article " . $post->getId());
         return $this->render('BellesCosesFalsesMainBundle:Blog:detail.html.twig', array(
             'post' => $post,
             'year' => $year,
             'month' => $month,
             'day' => $day,
             'titleslug' => $titleslug,
-            'id' => $id,
+            'id' => $post->getId(),
         ));
     }
 }
