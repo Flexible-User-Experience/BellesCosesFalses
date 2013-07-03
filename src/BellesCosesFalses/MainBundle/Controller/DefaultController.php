@@ -25,6 +25,17 @@ class DefaultController extends Controller
         array_push($urls, array('loc' => $this->get('router')->generate('agraiments'), 'changefreq' => 'weekly', 'priority' => '0.5'));
         array_push($urls, array('loc' => $this->get('router')->generate('credits'), 'changefreq' => 'weekly', 'priority' => '0.5'));
         array_push($urls, array('loc' => $this->get('router')->generate('blog'), 'changefreq' => 'daily', 'priority' => '1.0'));
+        $em = $this->getDoctrine()->getManager();
+        $posts = $em->getRepository('FluxBlogBundle:Post')->getAllActivePostsSortedByDate();
+        foreach ($posts as $post) {
+            array_push($urls, array('loc' => $this->get('router')->generate('blog_detail', array(
+                'year' => $post->getPostDate()->format('Y'),
+                'month' => $post->getPostDate()->format('m'),
+                'day' => $post->getPostDate()->format('d'),
+                'titleslug' => $post->getTitleSlug(),
+                'id' => $post->getId(),
+            )), 'changefreq' => 'daily', 'priority' => '1.0'));
+        }
         array_push($urls, array('loc' => $this->get('router')->generate('instagram'), 'changefreq' => 'weekly', 'priority' => '0.5'));
         return $this->render('FluxPageBundle:Global:sitemap.xml.twig', array(
             'urls' => $urls,
