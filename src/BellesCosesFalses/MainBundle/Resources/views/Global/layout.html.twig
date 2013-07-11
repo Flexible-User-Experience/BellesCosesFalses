@@ -30,7 +30,7 @@
     </div>
     <header>
         <div class="box-header-menu">
-            {{ knp_menu_render('BellesCosesFalsesMainBundle:Builder:main_menu', {'depth' : 1}) }}
+            {% block menudepth %}{{ knp_menu_render('BellesCosesFalsesMainBundle:Builder:main_menu', {'depth' : 1}) }}{% endblock %}
         </div>
         <div class="box-header-networks">
             <h3>PARTICIPA:</h3>

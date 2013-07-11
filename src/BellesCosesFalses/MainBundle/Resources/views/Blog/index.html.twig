@@ -2,6 +2,7 @@
 {% block titulo %}Blog · {% endblock %}
 {% block description %}{% endblock %}
 {% block recursos %}{% endblock recursos %}
+{% block menudepth %}{{ knp_menu_render('BellesCosesFalsesMainBundle:Builder:main_menu', {'depth' : 2}) }}{% endblock %}
 {% block principal %}
     {% if posts | length > 0 %}
         {% for post in posts %}
