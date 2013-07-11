@@ -3,12 +3,6 @@
 {% block description %}{{ page.metadescription }}{% endblock %}
 {% block recursos %}{% endblock recursos %}
 {% block principal %}
-    <div class="una-columna">
-        {% if page.image1 %}
-            <img src="{{ vich_uploader_asset(page, 'image1File') | imagine_filter('imatge380x380') }}" alt="{{ page.altImage1 }}" title="{{ page.titleImage1 }}">
-        {% endif %}
-        <h4>{{ page.title }}</h4>
-    </div>
     <div class="columna-izq">
         <p>
             {{ page.text1 | raw }}
