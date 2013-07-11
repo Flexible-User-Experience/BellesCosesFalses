@@ -385,6 +385,10 @@ div#principal div.blog-una-columna h2 {
     font-size: 14px;
 }
 
+div#principal div.blog-una-columna h2 img {
+    margin: 20px 0 5px 0;
+}
+
 div#principal div.blog-una-columna p {
     margin: 0 0 10px 0;
     font-size: 14px;
