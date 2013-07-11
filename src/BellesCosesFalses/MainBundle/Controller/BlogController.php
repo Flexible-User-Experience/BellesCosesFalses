@@ -20,7 +20,7 @@ class BlogController extends Controller
         $pagination = $paginator->paginate(
             $query,
             $this->get('request')->query->get('page', 1) /*page number*/,
-            5 /*limit per page*/
+            $this->container->getParameter('limit_per_page_pagination') /*limit per page*/
         );
 
         return $this->render('BellesCosesFalsesMainBundle:Blog:index.html.twig', array(
