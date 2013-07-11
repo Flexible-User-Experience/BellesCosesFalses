@@ -19,11 +19,12 @@ class Builder extends ContainerAware
         $blog = $menu->addChild('BLOG', array('route' => 'blog'));
         foreach ($posts as $post) {
             $blog->addChild($post->getTitle(), array('route' => 'blog_detail', 'routeParameters' => array(
-                'id' => 1,
-                'year' => 2,
-                'month' => 3,
-                'day' => 4,
-                'titleslug' => 's')));
+                'year' => $post->getPostDate()->format('Y'),
+                'month' => $post->getPostDate()->format('m'),
+                'day' => $post->getPostDate()->format('d'),
+                'titleslug' => $post->getTitleSlug(),
+                'id' => $post->getId()
+            )));
         }
         $menu->addChild('CONCURS', array('route' => 'agraiments'));
         $menu->addChild('CRÈDITS', array('route' => 'credits'));
