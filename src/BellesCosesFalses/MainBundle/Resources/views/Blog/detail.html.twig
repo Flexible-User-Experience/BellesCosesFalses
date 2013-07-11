@@ -14,10 +14,16 @@
                 {% endif %}
                 {% if post.image1 %}
                     <h2><img src="{{ vich_uploader_asset(post, 'image1File') | imagine_filter('imatge630xY') }}" alt="{{ post.altImage1 }}" title="{{ post.titleImage1 }}"></h2>
+                    {% if post.titleImage1 %}
+                        <span class="peu-imatge"><em>{{ post.titleImage1 }}</em></span>
+                    {% endif %}
                 {% endif %}
                 {{ post.text1 | raw }}
                 {% if post.image2 %}
                     <h2><img src="{{ vich_uploader_asset(post, 'image2File') | imagine_filter('imatge630xY') }}" alt="{{ post.altImage2 }}" title="{{ post.titleImage2 }}"></h2>
+                    {% if post.titleImage2 %}
+                        <span class="peu-imatge"><em>{{ post.titleImage2 }}</em></span>
+                    {% endif %}
                 {% endif %}
             </div>
 {% endblock %}

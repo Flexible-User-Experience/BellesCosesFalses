@@ -395,10 +395,15 @@ div#principal div.blog-una-columna p {
     font-weight: normal;
 }
 
+div#principal div.blog-una-columna span.peu-imatge {
+    display: block;
+    margin-bottom: 20px;
+}
+
 div#principal hr {
     border-top: solid 1px #000;
     height: 0;
-    margin: 10px 0 40px 0;
+    margin: 40px 0;
 }
 
 
