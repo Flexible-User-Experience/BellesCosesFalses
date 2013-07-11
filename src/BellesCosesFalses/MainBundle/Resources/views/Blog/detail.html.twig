@@ -13,14 +13,14 @@
                     <img style="width:24px;margin-right:5px;" src="{{ asset('bundles/bellescosesfalsesmain/images/download-icon.png') }}" alt="Descarrega" title="Descarrega"/><a target="_blank" rel='external' href='{{ vich_uploader_asset(post, 'document1File')  }}'>{{ post.document1Title }}</a>
                 {% endif %}
                 {% if post.image1 %}
-                    <h2><img src="{{ vich_uploader_asset(post, 'image1File') | imagine_filter('imatge630xY') }}" alt="{{ post.altImage1 }}" title="{{ post.titleImage1 }}"></h2>
+                    <h2><img src="{{ vich_uploader_asset(post, 'image1File') | imagine_filter('imatge630xY') }}" alt="{{ post.altImage1 }}" title="{{ post.titleImage1 }}"  {% if not post.titleImage1 %}style="margin-bottom:20px"{% endif %}></h2>
                     {% if post.titleImage1 %}
                         <span class="peu-imatge"><em>{{ post.titleImage1 }}</em></span>
                     {% endif %}
                 {% endif %}
                 {{ post.text1 | raw }}
                 {% if post.image2 %}
-                    <h2><img src="{{ vich_uploader_asset(post, 'image2File') | imagine_filter('imatge630xY') }}" alt="{{ post.altImage2 }}" title="{{ post.titleImage2 }}"></h2>
+                    <h2><img src="{{ vich_uploader_asset(post, 'image2File') | imagine_filter('imatge630xY') }}" alt="{{ post.altImage2 }}" title="{{ post.titleImage2 }}"  {% if not post.titleImage2 %}style="margin-bottom:20px"{% endif %}></h2>
                     {% if post.titleImage2 %}
                         <span class="peu-imatge"><em>{{ post.titleImage2 }}</em></span>
                     {% endif %}
