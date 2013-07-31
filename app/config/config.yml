@@ -98,11 +98,10 @@ swiftmailer:
 stfalcon_tinymce:
     include_jquery: false
     tinymce_jquery: true
-    textarea_class: "tinymce"
-    language: ca
+    selector: ".tinymce"
+    language: %locale%
     theme:
         simple:
-            mode: "textareas"
             theme: "advanced"
             theme_advanced_buttons1: "mylistbox, mysplitbutton, bold, italic, underline, separator, strikethrough, justifyleft, justifycenter, justifyright, justifyfull, bullist, numlist, undo, redo, pastetext, link, unlink, forecolor, backcolor, removeformat, cleanup, code"
             theme_advanced_buttons2: ""
@@ -124,7 +123,6 @@ stfalcon_tinymce:
             theme_advanced_statusbar_location: "bottom"
             theme_advanced_resizing: true
         medium:
-            mode: "textareas"
             theme: "advanced"
             plugins: "table, advhr, advlink, paste, xhtmlxtras, spellchecker"
             theme_advanced_buttons1: "bold, italic, underline, strikethrough, |, justifyleft, justifycenter, justifyright, justifyfull, |, forecolor, backcolor, |, hr, removeformat, |, sub, sup, |, spellchecker"
@@ -137,7 +135,6 @@ stfalcon_tinymce:
             spellchecker_languages: "+English=en, Dutch=nl"
             width: "600"
         bbcode:
-            mode: "none"
             theme: "advanced"
             plugins: "bbcode"
             theme_advanced_buttons1: "bold, italic, underline, undo, redo, pastetext, link, unlink, image, forecolor, styleselect, removeformat, cleanup, code"
