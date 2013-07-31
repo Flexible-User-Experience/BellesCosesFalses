@@ -3,3 +3,23 @@
 {% block footer %}
     {{ tinymce_init() }}
 {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets filter='cssrewrite' 'bundles/bellescosesfalsesmain/css/select2.css' %}
+    <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
+    {% endstylesheets %}
+    {% if form is defined %}
+        {{ form_stylesheet(form) }}
+    {% endif %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% javascripts '@BellesCosesFalsesMainBundle/Resources/public/js/vendor/select2.js' %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    {% if form is defined %}
+        {{ form_javascript(form) }}
+    {% endif %}
+{% endblock %}

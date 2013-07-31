@@ -31,6 +31,7 @@
         "stof/doctrine-extensions-bundle": "dev-master",
         "a2lix/translation-form-bundle": "1.*@dev",
         "stfalcon/tinymce-bundle": "dev-master",
+        "genemu/form-bundle": "2.2.*",
         "vich/uploader-bundle": "dev-master",
         "liip/imagine-bundle": "dev-master",
         "oh/instagram-bundle": "dev-master"

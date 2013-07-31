@@ -28,6 +28,8 @@ class AppKernel extends Kernel
 
             new Stfalcon\Bundle\TinymceBundle\StfalconTinymceBundle(),
 
+            new Genemu\Bundle\FormBundle\GenemuFormBundle(),
+
             new A2lix\TranslationFormBundle\A2lixTranslationFormBundle(),
 
             new Liip\ImagineBundle\LiipImagineBundle(),
