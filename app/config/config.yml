@@ -113,7 +113,7 @@ stfalcon_tinymce:
             theme_advanced_toolbar_location: "top"
             theme_advanced_toolbar_align: "left"
             theme_advanced_statusbar_location: "bottom"
-            plugins: "paste link textcolor"
+            plugins: "paste, link, textcolor"
             theme_advanced_buttons1_add: ""
         advanced:
             theme: "advanced"
