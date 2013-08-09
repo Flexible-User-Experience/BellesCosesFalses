@@ -148,7 +148,7 @@ div.constrictor {
 
 a {
     color: #000;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 div#background-main-div.constrictor.clearfix {
