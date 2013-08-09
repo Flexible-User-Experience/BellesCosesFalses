@@ -221,6 +221,7 @@ header div.box-header-menu ul li a {
     padding: 10px;
     font-size: 1em;
     display: block;
+    text-decoration: none;
 }
 
 header div.box-header-menu ul li.current {
