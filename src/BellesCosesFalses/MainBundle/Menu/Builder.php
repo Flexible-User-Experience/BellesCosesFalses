@@ -26,7 +26,7 @@ class Builder extends ContainerAware
                 'id' => $post->getId()
             )));
         }
-        $menu->addChild('CONCURS', array('route' => 'agraiments'));
+        //$menu->addChild('CONCURS', array('route' => 'agraiments'));
         $menu->addChild('CRÈDITS', array('route' => 'credits'));
         return $menu;
     }
