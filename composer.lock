@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2919d0d032e957370ec0bec924f788cf",
+    "hash": "7006d38797a00982f4b3d06c8815d43c",
     "packages": [
         {
             "name": "a2lix/translation-form-bundle",
@@ -1806,12 +1806,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "9252765dad0c6be531c90d7095c926572cf8668d"
+                "reference": "206720180ec9f5b2762d8568ff5cf6c3c3e8a3ae"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/9252765dad0c6be531c90d7095c926572cf8668d",
-                "reference": "9252765dad0c6be531c90d7095c926572cf8668d",
+                "reference": "206720180ec9f5b2762d8568ff5cf6c3c3e8a3ae",
                 "shasum": ""
             },
             "require": {
@@ -1876,7 +1876,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2013-10-09 09:10:53"
+            "time": "2013-09-25 10:45:26"
         },
         {
             "name": "sonata-project/block-bundle",
